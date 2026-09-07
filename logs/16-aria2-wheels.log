@@ -1,0 +1,229 @@
+### 2026-08-27T17:40:19+08:00 aria2c 多线程下载 66 个 wheel（带 pip UA）
+[DL:3.4MiB][#66fb27 1.0MiB/28MiB(3%)][#0821e6 144KiB/0.9MiB(15%)][#2b9fec 144KiB/4.2MiB(3%)][#418982 32KiB/71KiB(44%)][#7e7213 48KiB/774KiB(6%)]
+[DL:2.7MiB][#66fb27 2.6MiB/28MiB(9%)][#0821e6 256KiB/0.9MiB(27%)][#2b9fec 320KiB/4.2MiB(7%)][#7e7213 112KiB/774KiB(14%)][#d220aa 96KiB/131KiB(72%)]
+[DL:2.6MiB][#66fb27 4.5MiB/28MiB(16%)][#0821e6 432KiB/0.9MiB(46%)][#2b9fec 496KiB/4.2MiB(11%)][#7e7213 192KiB/774KiB(24%)][#7a230e 80KiB/1.6MiB(4%)]
+[DL:2.5MiB][#66fb27 6.4MiB/28MiB(22%)][#0821e6 592KiB/0.9MiB(63%)][#2b9fec 640KiB/4.2MiB(14%)][#7e7213 320KiB/774KiB(41%)][#7a230e 224KiB/1.6MiB(13%)]
+[DL:2.5MiB][#66fb27 8.2MiB/28MiB(28%)][#0821e6 688KiB/0.9MiB(73%)][#2b9fec 800KiB/4.2MiB(18%)][#7e7213 448KiB/774KiB(57%)][#7a230e 368KiB/1.6MiB(21%)]
+[DL:2.5MiB][#66fb27 10MiB/28MiB(35%)][#0821e6 816KiB/0.9MiB(87%)][#2b9fec 1.0MiB/4.2MiB(23%)][#7e7213 592KiB/774KiB(76%)][#7a230e 496KiB/1.6MiB(29%)]
+[DL:2.5MiB][#66fb27 11MiB/28MiB(41%)][#2b9fec 1.2MiB/4.2MiB(30%)][#7e7213 752KiB/774KiB(97%)][#7a230e 640KiB/1.6MiB(37%)][#7b15e9 0B/89KiB(0%)]
+[DL:2.4MiB][#66fb27 13MiB/28MiB(48%)][#2b9fec 1.5MiB/4.2MiB(35%)][#7a230e 752KiB/1.6MiB(44%)][#45aa0d 0B/0B][#17b5f1 0B/0B]
+[DL:2.4MiB][#66fb27 15MiB/28MiB(54%)][#2b9fec 1.7MiB/4.2MiB(41%)][#7a230e 0.9MiB/1.6MiB(55%)][#45aa0d 80KiB/523KiB(15%)][#69b158 0B/1.9MiB(0%)]
+[DL:2.4MiB][#66fb27 17MiB/28MiB(60%)][#2b9fec 2.0MiB/4.2MiB(47%)][#7a230e 1.0MiB/1.6MiB(65%)][#45aa0d 192KiB/523KiB(36%)][#69b158 128KiB/1.9MiB(6%)]
+[DL:2.3MiB][#66fb27 18MiB/28MiB(66%)][#2b9fec 2.3MiB/4.2MiB(56%)][#7a230e 1.2MiB/1.6MiB(73%)][#45aa0d 352KiB/523KiB(67%)][#69b158 272KiB/1.9MiB(13%)]
+[DL:2.3MiB][#66fb27 20MiB/28MiB(72%)][#2b9fec 2.5MiB/4.2MiB(60%)][#7a230e 1.3MiB/1.6MiB(81%)][#45aa0d 464KiB/523KiB(88%)][#69b158 432KiB/1.9MiB(21%)]
+[DL:2.3MiB][#66fb27 22MiB/28MiB(79%)][#2b9fec 2.8MiB/4.2MiB(67%)][#7a230e 1.4MiB/1.6MiB(89%)][#69b158 544KiB/1.9MiB(26%)][#fff19e 16KiB/159KiB(10%)]
+[DL:2.3MiB][#66fb27 24MiB/28MiB(85%)][#2b9fec 3.1MiB/4.2MiB(75%)][#69b158 704KiB/1.9MiB(34%)][#fff19e 128KiB/159KiB(80%)][#849159 0B/0B]
+[DL:2.3MiB][#66fb27 25MiB/28MiB(89%)][#2b9fec 3.3MiB/4.2MiB(79%)][#69b158 864KiB/1.9MiB(42%)][#849159 160KiB/15MiB(0%)][#b00f28 384KiB/374MiB(0%)]
+[DL:2.3MiB][#66fb27 26MiB/28MiB(92%)][#2b9fec 3.5MiB/4.2MiB(82%)][#69b158 0.9MiB/1.9MiB(48%)][#849159 336KiB/15MiB(2%)][#b00f28 1.5MiB/374MiB(0%)]
+[DL:2.3MiB][#66fb27 26MiB/28MiB(93%)][#2b9fec 3.6MiB/4.2MiB(84%)][#69b158 1.1MiB/1.9MiB(56%)][#849159 704KiB/15MiB(4%)][#b00f28 2.7MiB/374MiB(0%)]
+[DL:2.3MiB][#66fb27 26MiB/28MiB(95%)][#2b9fec 3.7MiB/4.2MiB(88%)][#69b158 1.2MiB/1.9MiB(60%)][#849159 1.2MiB/15MiB(7%)][#b00f28 4.0MiB/374MiB(1%)]
+[DL:2.3MiB][#66fb27 27MiB/28MiB(96%)][#2b9fec 3.8MiB/4.2MiB(89%)][#69b158 1.2MiB/1.9MiB(65%)][#849159 1.7MiB/15MiB(11%)][#b00f28 5.2MiB/374MiB(1%)]
+[DL:2.3MiB][#66fb27 27MiB/28MiB(97%)][#2b9fec 3.9MiB/4.2MiB(93%)][#69b158 1.4MiB/1.9MiB(72%)][#849159 2.2MiB/15MiB(14%)][#b00f28 6.4MiB/374MiB(1%)]
+[DL:2.3MiB][#66fb27 27MiB/28MiB(98%)][#2b9fec 4.0MiB/4.2MiB(95%)][#69b158 1.5MiB/1.9MiB(80%)][#849159 2.8MiB/15MiB(17%)][#b00f28 8.0MiB/374MiB(2%)]
+[DL:2.3MiB][#66fb27 28MiB/28MiB(99%)][#2b9fec 4.1MiB/4.2MiB(97%)][#69b158 1.7MiB/1.9MiB(87%)][#849159 3.3MiB/15MiB(21%)][#b00f28 9.3MiB/374MiB(2%)]
+[DL:2.3MiB][#66fb27 28MiB/28MiB(99%)][#69b158 1.7MiB/1.9MiB(91%)][#849159 3.8MiB/15MiB(24%)][#b00f28 10MiB/374MiB(2%)][#accdb6 0B/0B]
+[DL:2.3MiB][#69b158 1.8MiB/1.9MiB(95%)][#849159 4.4MiB/15MiB(27%)][#b00f28 12MiB/374MiB(3%)][#accdb6 96KiB/8.5MiB(1%)][#ec7d4d 48KiB/22MiB(0%)]
+[DL:2.3MiB][#849159 4.9MiB/15MiB(31%)][#b00f28 13MiB/374MiB(3%)][#accdb6 368KiB/8.5MiB(4%)][#ec7d4d 432KiB/22MiB(1%)][#7d5a06 0B/0B]
+[DL:2.3MiB][#849159 5.4MiB/15MiB(34%)][#b00f28 14MiB/374MiB(3%)][#accdb6 592KiB/8.5MiB(6%)][#ec7d4d 0.9MiB/22MiB(4%)][#7d5a06 16KiB/876KiB(1%)]
+[DL:2.3MiB][#849159 5.8MiB/15MiB(36%)][#b00f28 15MiB/374MiB(4%)][#accdb6 880KiB/8.5MiB(10%)][#ec7d4d 1.6MiB/22MiB(7%)][#7d5a06 80KiB/876KiB(9%)]
+[DL:2.3MiB][#849159 6.2MiB/15MiB(39%)][#b00f28 15MiB/374MiB(4%)][#accdb6 1.2MiB/8.5MiB(14%)][#ec7d4d 2.2MiB/22MiB(9%)][#7d5a06 176KiB/876KiB(20%)]
+[DL:2.3MiB][#849159 6.7MiB/15MiB(42%)][#b00f28 16MiB/374MiB(4%)][#accdb6 1.5MiB/8.5MiB(18%)][#ec7d4d 2.8MiB/22MiB(12%)][#7d5a06 256KiB/876KiB(29%)]
+[DL:2.3MiB][#849159 7.1MiB/15MiB(45%)][#b00f28 17MiB/374MiB(4%)][#accdb6 1.9MiB/8.5MiB(22%)][#ec7d4d 3.2MiB/22MiB(14%)][#7d5a06 336KiB/876KiB(38%)]
+[DL:2.3MiB][#849159 7.5MiB/15MiB(48%)][#b00f28 18MiB/374MiB(5%)][#accdb6 2.2MiB/8.5MiB(25%)][#ec7d4d 3.7MiB/22MiB(16%)][#7d5a06 464KiB/876KiB(52%)]
+[DL:2.3MiB][#849159 8.0MiB/15MiB(50%)][#b00f28 20MiB/374MiB(5%)][#accdb6 2.4MiB/8.5MiB(29%)][#ec7d4d 4.1MiB/22MiB(18%)][#7d5a06 544KiB/876KiB(62%)]
+[DL:2.3MiB][#849159 8.3MiB/15MiB(52%)][#b00f28 21MiB/374MiB(5%)][#accdb6 2.7MiB/8.5MiB(32%)][#ec7d4d 4.6MiB/22MiB(20%)][#7d5a06 624KiB/876KiB(71%)]
+[DL:2.3MiB][#849159 8.6MiB/15MiB(54%)][#b00f28 22MiB/374MiB(5%)][#accdb6 3.0MiB/8.5MiB(35%)][#ec7d4d 5.2MiB/22MiB(23%)][#7d5a06 736KiB/876KiB(83%)]
+[DL:2.3MiB][#849159 8.9MiB/15MiB(56%)][#b00f28 23MiB/374MiB(6%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 5.9MiB/22MiB(26%)][#7d5a06 784KiB/876KiB(89%)]
+[DL:2.3MiB][#849159 9.1MiB/15MiB(58%)][#b00f28 25MiB/374MiB(6%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 6.7MiB/22MiB(29%)][#031319 0B/0B]
+[DL:2.3MiB][#849159 9.2MiB/15MiB(58%)][#b00f28 26MiB/374MiB(7%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 7.4MiB/22MiB(32%)][#031319 208KiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.3MiB/15MiB(59%)][#b00f28 27MiB/374MiB(7%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 8.0MiB/22MiB(35%)][#031319 560KiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.4MiB/15MiB(60%)][#b00f28 28MiB/374MiB(7%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 8.7MiB/22MiB(39%)][#031319 0.9MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.5MiB/15MiB(60%)][#b00f28 29MiB/374MiB(7%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 9.5MiB/22MiB(42%)][#031319 1.2MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.6MiB/15MiB(61%)][#b00f28 31MiB/374MiB(8%)][#accdb6 3.1MiB/8.5MiB(36%)][#ec7d4d 10MiB/22MiB(45%)][#031319 1.6MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.6MiB/15MiB(61%)][#b00f28 32MiB/374MiB(8%)][#accdb6 3.2MiB/8.5MiB(37%)][#ec7d4d 10MiB/22MiB(48%)][#031319 2.2MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 33MiB/374MiB(8%)][#accdb6 3.2MiB/8.5MiB(38%)][#ec7d4d 11MiB/22MiB(50%)][#031319 2.6MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 34MiB/374MiB(9%)][#accdb6 3.4MiB/8.5MiB(40%)][#ec7d4d 12MiB/22MiB(53%)][#031319 3.0MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 35MiB/374MiB(9%)][#accdb6 3.5MiB/8.5MiB(41%)][#ec7d4d 12MiB/22MiB(56%)][#031319 3.5MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 36MiB/374MiB(9%)][#accdb6 3.5MiB/8.5MiB(42%)][#ec7d4d 13MiB/22MiB(58%)][#031319 4.1MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 38MiB/374MiB(10%)][#accdb6 3.6MiB/8.5MiB(42%)][#ec7d4d 13MiB/22MiB(60%)][#031319 4.6MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 39MiB/374MiB(10%)][#accdb6 3.7MiB/8.5MiB(44%)][#ec7d4d 14MiB/22MiB(63%)][#031319 5.1MiB/544MiB(0%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 40MiB/374MiB(10%)][#accdb6 3.8MiB/8.5MiB(45%)][#ec7d4d 14MiB/22MiB(65%)][#031319 5.7MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 41MiB/374MiB(11%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 15MiB/22MiB(67%)][#031319 6.2MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 43MiB/374MiB(11%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 15MiB/22MiB(69%)][#031319 6.9MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 44MiB/374MiB(11%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 16MiB/22MiB(72%)][#031319 7.6MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 45MiB/374MiB(12%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 16MiB/22MiB(73%)][#031319 8.3MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 46MiB/374MiB(12%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 17MiB/22MiB(76%)][#031319 8.9MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 48MiB/374MiB(12%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 17MiB/22MiB(78%)][#031319 9.6MiB/544MiB(1%)]
+[DL:2.4MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 49MiB/374MiB(13%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 17MiB/22MiB(79%)][#031319 10MiB/544MiB(1%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 50MiB/374MiB(13%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 18MiB/22MiB(80%)][#031319 11MiB/544MiB(2%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 51MiB/374MiB(13%)][#accdb6 3.9MiB/8.5MiB(46%)][#ec7d4d 18MiB/22MiB(82%)][#031319 12MiB/544MiB(2%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 53MiB/374MiB(14%)][#accdb6 4.1MiB/8.5MiB(48%)][#ec7d4d 18MiB/22MiB(82%)][#031319 12MiB/544MiB(2%)]
+[DL:2.4MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 54MiB/374MiB(14%)][#accdb6 4.2MiB/8.5MiB(49%)][#ec7d4d 18MiB/22MiB(83%)][#031319 13MiB/544MiB(2%)]
+ *** Download Progress Summary as of Thu Aug 27 17:41:20 2026 *** 
+===============================================================================
+[#849159 9.7MiB/15MiB(61%) CN:3 DL:0B]
+FILE: /tmp/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+-------------------------------------------------------------------------------
+[#b00f28 55MiB/374MiB(14%) CN:16 DL:1.2MiB ETA:4m5s]
+FILE: /tmp/wheels/nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+-------------------------------------------------------------------------------
+[#accdb6 4.3MiB/8.5MiB(50%) CN:4 DL:118KiB ETA:36s]
+FILE: /tmp/wheels/nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_x86_64.whl
+-------------------------------------------------------------------------------
+[#ec7d4d 18MiB/22MiB(83%) CN:6 DL:327KiB ETA:11s]
+FILE: /tmp/wheels/nvidia_cuda_nvrtc_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl
+-------------------------------------------------------------------------------
+[#031319 14MiB/544MiB(2%) CN:16 DL:770KiB ETA:11m44s]
+FILE: /tmp/wheels/nvidia_cudnn_cu12-9.5.1.17-py3-none-manylinux_2_28_x86_64.whl
+-------------------------------------------------------------------------------
+
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 55MiB/374MiB(14%)][#accdb6 4.3MiB/8.5MiB(50%)][#ec7d4d 18MiB/22MiB(83%)][#031319 14MiB/544MiB(2%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 57MiB/374MiB(15%)][#accdb6 4.4MiB/8.5MiB(51%)][#ec7d4d 19MiB/22MiB(84%)][#031319 15MiB/544MiB(2%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 58MiB/374MiB(15%)][#accdb6 4.5MiB/8.5MiB(53%)][#ec7d4d 19MiB/22MiB(85%)][#031319 16MiB/544MiB(2%)]
+[DL:2.4MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 59MiB/374MiB(15%)][#accdb6 4.6MiB/8.5MiB(54%)][#ec7d4d 19MiB/22MiB(85%)][#031319 17MiB/544MiB(3%)]
+[DL:2.4MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 60MiB/374MiB(16%)][#accdb6 4.7MiB/8.5MiB(55%)][#ec7d4d 19MiB/22MiB(86%)][#031319 18MiB/544MiB(3%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 62MiB/374MiB(16%)][#accdb6 4.7MiB/8.5MiB(56%)][#ec7d4d 19MiB/22MiB(86%)][#031319 18MiB/544MiB(3%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 63MiB/374MiB(16%)][#accdb6 4.8MiB/8.5MiB(57%)][#ec7d4d 19MiB/22MiB(86%)][#031319 19MiB/544MiB(3%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 64MiB/374MiB(17%)][#accdb6 5.0MiB/8.5MiB(58%)][#ec7d4d 19MiB/22MiB(86%)][#031319 20MiB/544MiB(3%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 66MiB/374MiB(17%)][#accdb6 5.0MiB/8.5MiB(59%)][#ec7d4d 19MiB/22MiB(86%)][#031319 21MiB/544MiB(3%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 67MiB/374MiB(17%)][#accdb6 5.1MiB/8.5MiB(60%)][#ec7d4d 19MiB/22MiB(86%)][#031319 22MiB/544MiB(4%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 68MiB/374MiB(18%)][#accdb6 5.3MiB/8.5MiB(62%)][#ec7d4d 19MiB/22MiB(86%)][#031319 23MiB/544MiB(4%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 70MiB/374MiB(18%)][#accdb6 5.3MiB/8.5MiB(62%)][#ec7d4d 19MiB/22MiB(87%)][#031319 24MiB/544MiB(4%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 71MiB/374MiB(19%)][#accdb6 5.3MiB/8.5MiB(62%)][#ec7d4d 19MiB/22MiB(87%)][#031319 25MiB/544MiB(4%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 73MiB/374MiB(19%)][#accdb6 5.3MiB/8.5MiB(62%)][#ec7d4d 19MiB/22MiB(87%)][#031319 26MiB/544MiB(4%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 74MiB/374MiB(19%)][#accdb6 5.3MiB/8.5MiB(62%)][#ec7d4d 19MiB/22MiB(88%)][#031319 27MiB/544MiB(4%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 75MiB/374MiB(20%)][#accdb6 5.3MiB/8.5MiB(62%)][#ec7d4d 19MiB/22MiB(88%)][#031319 28MiB/544MiB(5%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 76MiB/374MiB(20%)][#accdb6 5.4MiB/8.5MiB(63%)][#ec7d4d 20MiB/22MiB(88%)][#031319 29MiB/544MiB(5%)]
+[DL:2.3MiB][#849159 9.7MiB/15MiB(61%)][#b00f28 78MiB/374MiB(20%)][#accdb6 5.5MiB/8.5MiB(64%)][#ec7d4d 20MiB/22MiB(89%)][#031319 30MiB/544MiB(5%)]
+[DL:2.3MiB][#849159 9.8MiB/15MiB(62%)][#b00f28 79MiB/374MiB(21%)][#accdb6 5.5MiB/8.5MiB(64%)][#ec7d4d 20MiB/22MiB(89%)][#031319 30MiB/544MiB(5%)]
+[DL:2.3MiB][#849159 9.9MiB/15MiB(63%)][#b00f28 80MiB/374MiB(21%)][#accdb6 5.6MiB/8.5MiB(65%)][#ec7d4d 20MiB/22MiB(90%)][#031319 31MiB/544MiB(5%)]
+[DL:2.3MiB][#849159 10MiB/15MiB(64%)][#b00f28 81MiB/374MiB(21%)][#accdb6 5.6MiB/8.5MiB(66%)][#ec7d4d 20MiB/22MiB(90%)][#031319 32MiB/544MiB(5%)]
+[DL:2.3MiB][#849159 10MiB/15MiB(65%)][#b00f28 83MiB/374MiB(22%)][#accdb6 5.7MiB/8.5MiB(67%)][#ec7d4d 20MiB/22MiB(90%)][#031319 33MiB/544MiB(6%)]
+[DL:2.3MiB][#849159 10MiB/15MiB(65%)][#b00f28 84MiB/374MiB(22%)][#accdb6 5.8MiB/8.5MiB(68%)][#ec7d4d 20MiB/22MiB(91%)][#031319 34MiB/544MiB(6%)]
+[DL:2.3MiB][#849159 10MiB/15MiB(65%)][#b00f28 85MiB/374MiB(22%)][#accdb6 5.9MiB/8.5MiB(69%)][#ec7d4d 20MiB/22MiB(91%)][#031319 35MiB/544MiB(6%)]
+[DL:2.3MiB][#849159 10MiB/15MiB(66%)][#b00f28 86MiB/374MiB(23%)][#accdb6 6.0MiB/8.5MiB(71%)][#ec7d4d 20MiB/22MiB(91%)][#031319 36MiB/544MiB(6%)]
+[DL:2.3MiB][#849159 10MiB/15MiB(68%)][#b00f28 87MiB/374MiB(23%)][#accdb6 6.1MiB/8.5MiB(72%)][#ec7d4d 20MiB/22MiB(91%)][#031319 37MiB/544MiB(6%)]
+[DL:2.4MiB][#849159 10MiB/15MiB(69%)][#b00f28 89MiB/374MiB(23%)][#accdb6 6.2MiB/8.5MiB(73%)][#ec7d4d 20MiB/22MiB(91%)][#031319 37MiB/544MiB(6%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(70%)][#b00f28 90MiB/374MiB(24%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(91%)][#031319 38MiB/544MiB(7%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(71%)][#b00f28 91MiB/374MiB(24%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(91%)][#031319 39MiB/544MiB(7%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(72%)][#b00f28 93MiB/374MiB(24%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(91%)][#031319 40MiB/544MiB(7%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(73%)][#b00f28 94MiB/374MiB(25%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(91%)][#031319 41MiB/544MiB(7%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(74%)][#b00f28 95MiB/374MiB(25%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(91%)][#031319 42MiB/544MiB(7%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(74%)][#b00f28 97MiB/374MiB(25%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(91%)][#031319 42MiB/544MiB(7%)]
+[DL:2.4MiB][#849159 11MiB/15MiB(74%)][#b00f28 98MiB/374MiB(26%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 20MiB/22MiB(92%)][#031319 43MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(74%)][#b00f28 100MiB/374MiB(26%)][#accdb6 6.3MiB/8.5MiB(74%)][#ec7d4d 21MiB/22MiB(93%)][#031319 44MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(74%)][#b00f28 101MiB/374MiB(27%)][#accdb6 6.5MiB/8.5MiB(76%)][#ec7d4d 21MiB/22MiB(94%)][#031319 45MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(74%)][#b00f28 102MiB/374MiB(27%)][#accdb6 6.7MiB/8.5MiB(79%)][#ec7d4d 21MiB/22MiB(95%)][#031319 45MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(74%)][#b00f28 104MiB/374MiB(27%)][#accdb6 6.8MiB/8.5MiB(81%)][#ec7d4d 21MiB/22MiB(95%)][#031319 46MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(74%)][#b00f28 105MiB/374MiB(28%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 21MiB/22MiB(96%)][#031319 47MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(74%)][#b00f28 107MiB/374MiB(28%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(97%)][#031319 47MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 11MiB/15MiB(75%)][#b00f28 108MiB/374MiB(28%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(98%)][#031319 48MiB/544MiB(8%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(76%)][#b00f28 109MiB/374MiB(29%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 49MiB/544MiB(9%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(77%)][#b00f28 111MiB/374MiB(29%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 50MiB/544MiB(9%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(78%)][#b00f28 112MiB/374MiB(29%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 51MiB/544MiB(9%)]
+[DL:2.4MiB][#849159 12MiB/15MiB(79%)][#b00f28 113MiB/374MiB(30%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 52MiB/544MiB(9%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(79%)][#b00f28 114MiB/374MiB(30%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 53MiB/544MiB(9%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(80%)][#b00f28 116MiB/374MiB(30%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 54MiB/544MiB(9%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(81%)][#b00f28 117MiB/374MiB(31%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 55MiB/544MiB(10%)]
+[DL:2.3MiB][#849159 12MiB/15MiB(82%)][#b00f28 118MiB/374MiB(31%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 56MiB/544MiB(10%)]
+[DL:2.3MiB][#849159 13MiB/15MiB(83%)][#b00f28 119MiB/374MiB(31%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 57MiB/544MiB(10%)]
+[DL:2.3MiB][#849159 13MiB/15MiB(85%)][#b00f28 120MiB/374MiB(32%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 58MiB/544MiB(10%)]
+[DL:2.3MiB][#849159 13MiB/15MiB(87%)][#b00f28 121MiB/374MiB(32%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 59MiB/544MiB(10%)]
+[DL:2.3MiB][#849159 14MiB/15MiB(89%)][#b00f28 122MiB/374MiB(32%)][#accdb6 7.0MiB/8.5MiB(82%)][#ec7d4d 22MiB/22MiB(99%)][#031319 60MiB/544MiB(11%)]
+[DL:2.3MiB][#849159 14MiB/15MiB(91%)][#b00f28 123MiB/374MiB(32%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 61MiB/544MiB(11%)][#eb0fb1 64KiB/190MiB(0%)]
+[DL:2.3MiB][#849159 14MiB/15MiB(92%)][#b00f28 124MiB/374MiB(33%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 62MiB/544MiB(11%)][#eb0fb1 336KiB/190MiB(0%)]
+[DL:2.3MiB][#849159 14MiB/15MiB(93%)][#b00f28 124MiB/374MiB(33%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 63MiB/544MiB(11%)][#eb0fb1 704KiB/190MiB(0%)]
+[DL:2.3MiB][#849159 14MiB/15MiB(94%)][#b00f28 125MiB/374MiB(33%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 64MiB/544MiB(11%)][#eb0fb1 1.0MiB/190MiB(0%)]
+[DL:2.3MiB][#849159 14MiB/15MiB(94%)][#b00f28 126MiB/374MiB(33%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 65MiB/544MiB(11%)][#eb0fb1 1.4MiB/190MiB(0%)]
+[DL:2.3MiB][#849159 15MiB/15MiB(95%)][#b00f28 127MiB/374MiB(34%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 65MiB/544MiB(12%)][#eb0fb1 2.0MiB/190MiB(1%)]
+[DL:2.3MiB][#849159 15MiB/15MiB(96%)][#b00f28 128MiB/374MiB(34%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 66MiB/544MiB(12%)][#eb0fb1 2.7MiB/190MiB(1%)]
+[DL:2.3MiB][#849159 15MiB/15MiB(96%)][#b00f28 129MiB/374MiB(34%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 67MiB/544MiB(12%)][#eb0fb1 3.2MiB/190MiB(1%)]
+ *** Download Progress Summary as of Thu Aug 27 17:42:21 2026 *** 
+===============================================================================
+[#849159 15MiB/15MiB(97%) CN:1 DL:160KiB ETA:2s]
+FILE: /tmp/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+-------------------------------------------------------------------------------
+[#b00f28 130MiB/374MiB(34%) CN:16 DL:891KiB ETA:4m41s]
+FILE: /tmp/wheels/nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+-------------------------------------------------------------------------------
+[#accdb6 7.1MiB/8.5MiB(83%) CN:1 DL:8.7KiB ETA:2m43s]
+FILE: /tmp/wheels/nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_x86_64.whl
+-------------------------------------------------------------------------------
+[#031319 68MiB/544MiB(12%) CN:16 DL:0.9MiB ETA:8m45s]
+FILE: /tmp/wheels/nvidia_cudnn_cu12-9.5.1.17-py3-none-manylinux_2_28_x86_64.whl
+-------------------------------------------------------------------------------
+[#eb0fb1 3.9MiB/190MiB(2%) CN:16 DL:492KiB ETA:6m28s]
+FILE: /tmp/wheels/nvidia_cufft_cu12-11.3.0.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+-------------------------------------------------------------------------------
+
+[DL:2.3MiB][#849159 15MiB/15MiB(97%)][#b00f28 130MiB/374MiB(34%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 68MiB/544MiB(12%)][#eb0fb1 3.9MiB/190MiB(2%)]
+[DL:2.3MiB][#849159 15MiB/15MiB(98%)][#b00f28 130MiB/374MiB(34%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 69MiB/544MiB(12%)][#eb0fb1 4.5MiB/190MiB(2%)]
+[DL:2.3MiB][#849159 15MiB/15MiB(99%)][#b00f28 131MiB/374MiB(35%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 70MiB/544MiB(12%)][#eb0fb1 5.0MiB/190MiB(2%)]
+[DL:2.3MiB][#849159 15MiB/15MiB(99%)][#b00f28 132MiB/374MiB(35%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 71MiB/544MiB(13%)][#eb0fb1 5.5MiB/190MiB(2%)]
+[DL:2.3MiB][#b00f28 133MiB/374MiB(35%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 71MiB/544MiB(13%)][#eb0fb1 5.9MiB/190MiB(3%)][#429f4c 80KiB/1.0MiB(7%)]
+[DL:2.3MiB][#b00f28 134MiB/374MiB(35%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 72MiB/544MiB(13%)][#eb0fb1 6.3MiB/190MiB(3%)][#429f4c 224KiB/1.0MiB(20%)]
+[DL:2.3MiB][#b00f28 135MiB/374MiB(36%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 73MiB/544MiB(13%)][#eb0fb1 6.5MiB/190MiB(3%)][#429f4c 368KiB/1.0MiB(32%)]
+[DL:2.3MiB][#b00f28 136MiB/374MiB(36%)][#accdb6 7.1MiB/8.5MiB(83%)][#031319 74MiB/544MiB(13%)][#eb0fb1 7.1MiB/190MiB(3%)][#429f4c 448KiB/1.0MiB(40%)]
+[DL:2.3MiB][#b00f28 137MiB/374MiB(36%)][#accdb6 7.2MiB/8.5MiB(85%)][#031319 75MiB/544MiB(13%)][#eb0fb1 7.6MiB/190MiB(4%)][#429f4c 528KiB/1.0MiB(47%)]
+[DL:2.3MiB][#b00f28 138MiB/374MiB(36%)][#accdb6 7.3MiB/8.5MiB(86%)][#031319 76MiB/544MiB(14%)][#eb0fb1 7.9MiB/190MiB(4%)][#429f4c 688KiB/1.0MiB(61%)]
+[DL:2.4MiB][#b00f28 138MiB/374MiB(37%)][#accdb6 7.4MiB/8.5MiB(87%)][#031319 77MiB/544MiB(14%)][#eb0fb1 8.3MiB/190MiB(4%)][#429f4c 832KiB/1.0MiB(74%)]
+[DL:2.3MiB][#b00f28 139MiB/374MiB(37%)][#accdb6 7.4MiB/8.5MiB(87%)][#031319 78MiB/544MiB(14%)][#eb0fb1 8.6MiB/190MiB(4%)][#429f4c 912KiB/1.0MiB(81%)]
+[DL:2.3MiB][#b00f28 140MiB/374MiB(37%)][#accdb6 7.5MiB/8.5MiB(88%)][#031319 79MiB/544MiB(14%)][#eb0fb1 8.9MiB/190MiB(4%)][#429f4c 1.0MiB/1.0MiB(94%)]
+[DL:2.3MiB][#b00f28 141MiB/374MiB(37%)][#accdb6 7.6MiB/8.5MiB(90%)][#031319 80MiB/544MiB(14%)][#eb0fb1 9.2MiB/190MiB(4%)][#adfbda 48KiB/53MiB(0%)]
+[DL:2.3MiB][#b00f28 142MiB/374MiB(38%)][#accdb6 7.8MiB/8.5MiB(92%)][#031319 81MiB/544MiB(14%)][#eb0fb1 9.5MiB/190MiB(4%)][#adfbda 112KiB/53MiB(0%)]
+[DL:2.3MiB][#b00f28 143MiB/374MiB(38%)][#accdb6 7.8MiB/8.5MiB(92%)][#031319 82MiB/544MiB(15%)][#eb0fb1 9.8MiB/190MiB(5%)][#adfbda 272KiB/53MiB(0%)]
+[DL:2.3MiB][#b00f28 144MiB/374MiB(38%)][#accdb6 7.9MiB/8.5MiB(93%)][#031319 83MiB/544MiB(15%)][#eb0fb1 10MiB/190MiB(5%)][#adfbda 480KiB/53MiB(0%)]
+[DL:2.3MiB][#b00f28 144MiB/374MiB(38%)][#accdb6 8.1MiB/8.5MiB(95%)][#031319 83MiB/544MiB(15%)][#eb0fb1 10MiB/190MiB(5%)][#adfbda 848KiB/53MiB(1%)]
+[DL:2.3MiB][#b00f28 145MiB/374MiB(38%)][#accdb6 8.3MiB/8.5MiB(97%)][#031319 84MiB/544MiB(15%)][#eb0fb1 10MiB/190MiB(5%)][#adfbda 1.4MiB/53MiB(2%)]
+[DL:2.3MiB][#b00f28 146MiB/374MiB(39%)][#accdb6 8.3MiB/8.5MiB(97%)][#031319 85MiB/544MiB(15%)][#eb0fb1 10MiB/190MiB(5%)][#adfbda 1.9MiB/53MiB(3%)]
+
+下载结果：
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+88dd14|OK  |   1.4MiB/s|/tmp/wheels/certifi-2026.7.22-py3-none-any.whl
+baf1c1|OK  |   1.7MiB/s|/tmp/wheels/anyio-4.14.2-py3-none-any.whl
+c1d906|OK  |   2.6MiB/s|/tmp/wheels/charset_normalizer-3.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+019672|OK  |   3.5MiB/s|/tmp/wheels/cloudpickle-3.1.2-py3-none-any.whl
+3149b9|OK  |   7.5MiB/s|/tmp/wheels/click-8.4.2-py3-none-any.whl
+fb437e|OK  |   1.9MiB/s|/tmp/wheels/accelerate-1.14.0-py3-none-any.whl
+eeeebd|OK  |   3.6MiB/s|/tmp/wheels/einops-0.8.2-py3-none-any.whl
+6e14b3|OK  |   1.0MiB/s|/tmp/wheels/annotated_doc-0.0.5-py3-none-any.whl
+549ae8|OK  |   4.5MiB/s|/tmp/wheels/draccus-0.11.6-py3-none-any.whl
+1d00ff|OK  |   1.0MiB/s|/tmp/wheels/h11-0.16.0-py3-none-any.whl
+33604b|OK  |   2.5MiB/s|/tmp/wheels/filelock-3.32.4-py3-none-any.whl
+0aced4|OK  |   5.7MiB/s|/tmp/wheels/httpcore-1.0.9-py3-none-any.whl
+3d332f|OK  |   565KiB/s|/tmp/wheels/farama_notifications-0.0.6-py3-none-any.whl
+418982|OK  |   240KiB/s|/tmp/wheels/httpx-0.28.1-py3-none-any.whl
+c88617|OK  |   405KiB/s|/tmp/wheels/idna-3.19-py3-none-any.whl
+d220aa|OK  |   242KiB/s|/tmp/wheels/jinja2-3.1.6-py3-none-any.whl
+0821e6|OK  |   150KiB/s|/tmp/wheels/gymnasium-1.3.0-py3-none-any.whl
+7e7213|OK  |   123KiB/s|/tmp/wheels/huggingface_hub-1.28.0-py3-none-any.whl
+7b15e9|OK  |   193KiB/s|/tmp/wheels/markdown_it_py-4.2.0-py3-none-any.whl
+91d3e0|OK  |   3.6MiB/s|/tmp/wheels/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+52a898|OK  |   512KiB/s|/tmp/wheels/mdurl-0.1.2-py3-none-any.whl
+d29408|OK  |   326KiB/s|/tmp/wheels/mergedeep-1.3.4-py3-none-any.whl
+17b5f1|OK  |   692KiB/s|/tmp/wheels/mypy_extensions-1.1.0-py3-none-any.whl
+45aa0d|OK  |   125KiB/s|/tmp/wheels/mpmath-1.3.0-py3-none-any.whl
+7a230e|OK  |   147KiB/s|/tmp/wheels/lerobot-0.6.1-py3-none-any.whl
+fff19e|OK  |   136KiB/s|/tmp/wheels/num2words-0.5.14-py3-none-any.whl
+2b9fec|OK  |   196KiB/s|/tmp/wheels/hf_xet-1.6.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+66fb27|OK  |   1.2MiB/s|/tmp/wheels/cmake-4.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+69b158|OK  |   127KiB/s|/tmp/wheels/networkx-3.6.1-py3-none-any.whl
+7d5a06|OK  |    91KiB/s|/tmp/wheels/nvidia_cuda_runtime_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl
+ec7d4d|OK  |   259KiB/s|/tmp/wheels/nvidia_cuda_nvrtc_cu12-12.6.77-py3-none-manylinux2014_x86_64.whl
+849159|OK  |   146KiB/s|/tmp/wheels/numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+429f4c|OK  |   122KiB/s|/tmp/wheels/nvidia_cufile_cu12-1.11.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+b00f28|INPR|   1.1MiB/s|/tmp/wheels/nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+accdb6|INPR|    72KiB/s|/tmp/wheels/nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_x86_64.whl
+031319|INPR|   843KiB/s|/tmp/wheels/nvidia_cudnn_cu12-9.5.1.17-py3-none-manylinux_2_28_x86_64.whl
+eb0fb1|INPR|   395KiB/s|/tmp/wheels/nvidia_cufft_cu12-11.3.0.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+adfbda|INPR|   341KiB/s|/tmp/wheels/nvidia_curand_cu12-10.3.7.77-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+
+状态标识：
+(OK):下载完成。(INPR):下载中。
+
+传输重启后 aria2 可继续该下载。
+如果发生任何错误，请参阅日志文件。详细信息见帮助/手册页面中的“-l”选项。
+### aria2 exit=7  2026-08-27T17:42:40+08:00
+wheel 数: 38
+1.3G	/tmp/wheels

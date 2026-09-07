@@ -1,0 +1,4 @@
+### 2026-08-27T17:10:34+08:00 git lfs pull（直连 + 32 并发 + 排除演示视频）
+error: git-lfs died of signal 15
+### exit=143 2026-08-27T17:12:11+08:00
+21M	assets

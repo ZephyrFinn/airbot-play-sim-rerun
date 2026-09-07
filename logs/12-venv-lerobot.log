@@ -1,0 +1,112 @@
+### 2026-08-27T17:09:08+08:00 安装 LeRobot + SmolVLA 依赖
++(eval):8> uv pip install torch torchvision --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+Using Python 3.12.3 environment at: ws/venv-vla
+Resolved 32 packages in 1.26s
+Downloading torch (502.2MiB)
+Downloading nvidia-cudnn-cu13 (349.2MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading nvidia-nccl-cu13 (196.4MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading triton (188.6MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading nvidia-nvjitlink (38.9MiB)
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading torchvision (7.3MiB)
+Downloading cuda-bindings (6.3MiB)
+Downloading sympy (6.0MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading networkx (2.0MiB)
+Downloading nvidia-cufile (1.2MiB)
+ Downloaded nvidia-cufile
+ Downloaded networkx
+ Downloaded nvidia-cuda-runtime
+ Downloaded sympy
+ Downloaded torchvision
+ Downloaded cuda-bindings
+ Downloaded nvidia-cuda-cupti
+ Downloaded nvidia-nvjitlink
+ Downloaded nvidia-curand
+ Downloaded nvidia-nvshmem-cu13
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-cusparse
+ Downloaded nvidia-cusparselt-cu13
+ Downloaded triton
+ Downloaded nvidia-cusolver
+ Downloaded nvidia-nccl-cu13
+ Downloaded nvidia-cufft
+ Downloaded nvidia-cudnn-cu13
+### 2026-08-27T17:27:17+08:00 换阿里云源重装 torch + lerobot
+Using Python 3.12.3 environment at: ws/venv-vla
+Resolved 32 packages in 1.46s
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading nvidia-cudnn-cu13 (349.2MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading torch (502.2MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading nvidia-nccl-cu13 (196.4MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading nvidia-cufile (1.2MiB)
+Downloading nvidia-nvjitlink (38.9MiB)
+Downloading sympy (6.0MiB)
+Downloading torchvision (7.3MiB)
+Downloading triton (188.6MiB)
+Downloading cuda-bindings (6.3MiB)
+Downloading networkx (2.0MiB)
+ Downloaded networkx
+ Downloaded nvidia-cufile
+ Downloaded nvidia-cuda-runtime
+ Downloaded nvidia-cuda-cupti
+ Downloaded sympy
+ Downloaded cuda-bindings
+ Downloaded torchvision
+ Downloaded nvidia-curand
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-nvshmem-cu13
+ Downloaded nvidia-nvjitlink
+已终止
+Using Python 3.12.3 environment at: ws/venv-vla
+Resolved 75 packages in 3.45s
+Downloading lerobot (1.6MiB)
+Downloading nvidia-cudnn-cu13 (349.1MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading nvidia-cusparselt-cu13 (162.0MiB)
+Downloading cmake (28.3MiB)
+Downloading torch (506.1MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading nvidia-nvjitlink (38.8MiB)
+Downloading torchvision (7.2MiB)
+Downloading hf-xet (4.3MiB)
+Downloading nvidia-nccl-cu13 (187.4MiB)
+Downloading setuptools (1.0MiB)
+Downloading opencv-python-headless (57.6MiB)
+Downloading transformers (9.8MiB)
+Downloading numpy (15.8MiB)
+Downloading triton (179.5MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading tokenizers (3.1MiB)
+Downloading nvidia-cusolver (191.6MiB)
+   Building docopt==0.6.2
+Downloading pygments (1.2MiB)
+      Built docopt==0.6.2
+ Downloaded lerobot
+ Downloaded setuptools
+ Downloaded pygments
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded numpy
+ Downloaded transformers
+ Downloaded torchvision
+已终止
+/tmp/install-lerobot.sh: 行 8: python: 未找到命令
+### exit=127

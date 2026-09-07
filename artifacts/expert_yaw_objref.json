@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+    "episodes": 20,
+    "成功数": 20,
+    "success_rate": 1.0,
+    "failed_stage_counts": {}
+  },
+  "per_episode": [
+    {
+      "seed": 5001,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 242,
+      "failed_stages": []
+    },
+    {
+      "seed": 5002,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5003,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5004,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5005,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5006,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5007,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5008,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5009,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5010,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    }
+  ]
+}

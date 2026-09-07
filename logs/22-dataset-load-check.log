@@ -1,0 +1,17 @@
+### 2026-08-27T18:20:54+08:00 数据集读取自检（模拟训练时的 DataLoader 取样）
+
+FFmpeg version 8:
+
+FFmpeg version 7:
+
+FFmpeg version 6:
+
+FFmpeg version 5:
+
+FFmpeg version 4:
+集数 60 | 帧数 14954 | fps 30
+features: ['observation.state', 'action', 'observation.images.wrist', 'observation.images.env0', 'timestamp', 'frame_index', 'episode_index', 'index', 'task_index']
+图像值域: 0.0 ~ 1.0
+state: [0.0982, -0.3134, 0.2886, 0.0, 0.7071, -0.0, 0.7071, 0.0052]
+action: [0.0982, -0.3134, 0.2886, 0.0, 0.7071, -0.0, 0.7071, 0.0052]
+DATASET_LOAD_OK

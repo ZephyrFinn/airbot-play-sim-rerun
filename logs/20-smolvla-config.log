@@ -1,0 +1,12 @@
+type: smolvla
+chunk_size: 50
+n_action_steps: 50
+n_obs_steps: 1
+max_state_dim: 32
+max_action_dim: 32
+vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+freeze_vision_encoder: True
+num_steps: 10
+resize_imgs_with_padding: [512, 512]
+input_features: ['observation.state', 'observation.images.camera1', 'observation.images.camera2', 'observation.images.camera3']
+output_features: ['action']

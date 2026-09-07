@@ -1,0 +1,34 @@
+### 2026-08-27T20:38:51+08:00 ckpt 8000 闭环评测（补中间点，做训练步数-成功率曲线）
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+策略已加载: /home/tz/workspace/airbot/sim-rerun/artifacts/train_smolvla/checkpoints/008000/pretrained_model  device=cuda
+[2/40] seed=5001 success=[True, True] steps=290 failed_at=[]
+[4/40] seed=5002 success=[True, True] steps=172 failed_at=[]
+[6/40] seed=5003 success=[True, True] steps=196 failed_at=[]
+[8/40] seed=5004 success=[True, True] steps=181 failed_at=[]
+[10/40] seed=5005 success=[True, True] steps=172 failed_at=[]
+[12/40] seed=5006 success=[True, True] steps=218 failed_at=[]
+[14/40] seed=5007 success=[True, True] steps=195 failed_at=[]
+[16/40] seed=5008 success=[True, True] steps=160 failed_at=[]
+[18/40] seed=5009 success=[True, True] steps=186 failed_at=[]
+[20/40] seed=5010 success=[True, True] steps=192 failed_at=[]
+[22/40] seed=5011 success=[True, True] steps=178 failed_at=[]
+[24/40] seed=5012 success=[True, True] steps=191 failed_at=[]
+[26/40] seed=5013 success=[True, True] steps=165 failed_at=[]
+[28/40] seed=5014 success=[True, True] steps=169 failed_at=[]
+[30/40] seed=5015 success=[True, True] steps=184 failed_at=[]
+[32/40] seed=5016 success=[True, True] steps=172 failed_at=[]
+[34/40] seed=5017 success=[True, True] steps=189 failed_at=[]
+[36/40] seed=5018 success=[True, True] steps=320 failed_at=[]
+[38/40] seed=5019 success=[True, True] steps=193 failed_at=[]
+[40/40] seed=5020 success=[True, True] steps=181 failed_at=[]
+
+{
+  "checkpoint": "/home/tz/workspace/airbot/sim-rerun/artifacts/train_smolvla/checkpoints/008000/pretrained_model",
+  "episodes": 40,
+  "success_rate": 1.0,
+  "成功数": 40,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/train_smolvla/checkpoints/008000/eval_result.json
+### exit=0

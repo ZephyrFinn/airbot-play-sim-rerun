@@ -1,0 +1,31 @@
+### 2026-08-27T19:24:04+08:00 脚本化专家基线（同一批 seed 5001-5020）
+[2/40] seed=5001 [True, True] steps=245
+[4/40] seed=5002 [True, True] steps=248
+[6/40] seed=5003 [True, True] steps=248
+[8/40] seed=5004 [True, True] steps=253
+[10/40] seed=5005 [True, True] steps=245
+[12/40] seed=5006 [True, True] steps=249
+[14/40] seed=5007 [True, True] steps=252
+[16/40] seed=5008 [True, True] steps=254
+[18/40] seed=5009 [True, True] steps=245
+[20/40] seed=5010 [True, True] steps=250
+[22/40] seed=5011 [True, True] steps=249
+[24/40] seed=5012 [True, True] steps=249
+[26/40] seed=5013 [True, True] steps=246
+[28/40] seed=5014 [True, True] steps=245
+[30/40] seed=5015 [True, True] steps=248
+[32/40] seed=5016 [True, True] steps=249
+[34/40] seed=5017 [True, True] steps=247
+[36/40] seed=5018 [True, True] steps=250
+[38/40] seed=5019 [True, True] steps=252
+[40/40] seed=5020 [True, True] steps=251
+
+{
+  "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+  "episodes": 40,
+  "成功数": 40,
+  "success_rate": 1.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/expert_baseline.json
+### exit=0

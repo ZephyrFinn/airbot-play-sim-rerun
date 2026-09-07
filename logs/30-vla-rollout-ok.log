@@ -1,0 +1,7 @@
+### 2026-08-27T22:03:19+08:00 录成功案例（seed 5002，评测里两个环境都成功）
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+策略已加载
+seed=5002 success=[True, True] steps=173
+已保存 /home/tz/workspace/airbot/sim-rerun/artifacts/vla_rollout_OK_seed5002.mp4 (173 帧)
+### exit=0

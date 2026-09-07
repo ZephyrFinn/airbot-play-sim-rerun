@@ -1,0 +1,183 @@
+### 2026-08-27T18:00:40+08:00 拉 SmolVLA 基座权重 lerobot/smolvla_base（走 hf-mirror）
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:05,  1.76it/s]Fetching 10 files:  20%|██        | 2/10 [00:01<00:04,  1.72it/s]Fetching 10 files:  30%|███       | 3/10 [00:01<00:02,  2.55it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  4.48it/s]Fetching 10 files:  60%|██████    | 6/10 [00:01<00:01,  3.50it/s]Fetching 10 files:  60%|██████    | 6/10 [00:05<00:03,  1.16it/s]
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 522, in snapshot_download
+    hf_thread_map(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 502, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1242, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1961, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 565, in xet_get
+    with session.new_file_download_group(
+RuntimeError: Task error: File reconstruction error: CAS Client Error: Request error: HTTP status client error (401 Unauthorized), domain: https://cas-server.xethub.hf.co/v2/reconstructions/f9d23816dc7e29c815e83b9d404e4d2ae613797e09663c58a37771b0f48f6cfd
+### exit=1
+
+### 2026-08-27T18:01:01+08:00 重试：HF_HUB_DISABLE_XET=1（hf-mirror 不支持 Xet CAS 协议）
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  70%|███████   | 7/10 [00:04<00:01,  1.55it/s]Fetching 10 files:  70%|███████   | 7/10 [00:14<00:06,  2.14s/it]
+Traceback (most recent call last):
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 126, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 522, in snapshot_download
+    hf_thread_map(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 502, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1242, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1977, in _download_to_tmp_and_move
+    http_get(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 376, in http_get
+    with http_stream_backoff(
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 681, in http_stream_backoff
+    yield from _http_backoff_base(
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 502, in _http_backoff_base
+    with client.stream(method=method, url=url, **kwargs) as response:
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 868, in stream
+    response = self.send(
+               ^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+### exit=1
+
+### 2026-08-27T18:01:28+08:00 再试：官方源 + 用户代理 + 禁用 Xet
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 268, in snapshot_download
+    repo_info = api.repo_info(repo_id=repo_id, repo_type=repo_type, revision=revision)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 3655, in repo_info
+    return method(
+           ^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 3334, in model_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+        ^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 379, in get_session
+    _GLOBAL_CLIENT = _GLOBAL_CLIENT_FACTORY()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 308, in default_client_factory
+    return httpx.Client(
+           ^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 686, in __init__
+    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_client.py", line 245, in _get_proxy_map
+    key: None if url is None else Proxy(url=url)
+                                  ^^^^^^^^^^^^^^
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/httpx/_config.py", line 214, in __init__
+    raise ValueError(f"Unknown scheme for proxy URL {url!r}")
+ValueError: Unknown scheme for proxy URL URL('socks://127.0.0.1:7897/')
+### exit=1
+
+### 2026-08-27T18:01:51+08:00 再试：去掉 all_proxy(socks://)，只留 http(s)_proxy
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:00<00:00, 14.52it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:20<00:00, 14.52it/s]

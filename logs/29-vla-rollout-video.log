@@ -1,0 +1,7 @@
+### 2026-08-27T22:01:58+08:00 录制 ckpt8000 的 VLA rollout 视频
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+策略已加载
+seed=7001 success=[False, True] steps=400
+已保存 /home/tz/workspace/airbot/sim-rerun/artifacts/vla_rollout.mp4 (400 帧)
+### exit=0

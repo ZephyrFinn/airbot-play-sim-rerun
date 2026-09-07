@@ -1,0 +1,66 @@
+### 2026-09-02T11:53:39+08:00 【关键对照】v1 模型（训练时姿态恒定）去做 yaw 任务 —— 分布外测试
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+策略已加载: /home/tz/workspace/airbot/sim-rerun/artifacts/train_smolvla/checkpoints/012000/pretrained_model  device=cuda
+[2/100] seed=5001 success=[True, True] steps=194 failed_at=[]
+[4/100] seed=5002 success=[True, True] steps=174 failed_at=[]
+[6/100] seed=5003 success=[True, True] steps=177 failed_at=[]
+[8/100] seed=5004 success=[True, True] steps=160 failed_at=[]
+[10/100] seed=5005 success=[True, True] steps=142 failed_at=[]
+[12/100] seed=5006 success=[True, True] steps=247 failed_at=[]
+[14/100] seed=5007 success=[True, True] steps=190 failed_at=[]
+[16/100] seed=5008 success=[True, True] steps=191 failed_at=[]
+[18/100] seed=5009 success=[True, True] steps=153 failed_at=[]
+[20/100] seed=5010 success=[True, True] steps=165 failed_at=[]
+[22/100] seed=5011 success=[True, True] steps=390 failed_at=[]
+[24/100] seed=5012 success=[True, False] steps=91 failed_at=['place_source']
+[26/100] seed=5013 success=[True, True] steps=137 failed_at=[]
+[28/100] seed=5014 success=[False, True] steps=400 failed_at=[]
+[30/100] seed=5015 success=[True, True] steps=190 failed_at=[]
+[32/100] seed=5016 success=[True, True] steps=169 failed_at=[]
+[34/100] seed=5017 success=[True, True] steps=197 failed_at=[]
+[36/100] seed=5018 success=[True, True] steps=140 failed_at=[]
+[38/100] seed=5019 success=[True, True] steps=171 failed_at=[]
+[40/100] seed=5020 success=[True, True] steps=185 failed_at=[]
+[42/100] seed=5021 success=[True, True] steps=196 failed_at=[]
+[44/100] seed=5022 success=[True, True] steps=171 failed_at=[]
+[46/100] seed=5023 success=[True, True] steps=174 failed_at=[]
+[48/100] seed=5024 success=[True, True] steps=298 failed_at=[]
+[50/100] seed=5025 success=[True, True] steps=193 failed_at=[]
+[52/100] seed=5026 success=[True, True] steps=298 failed_at=[]
+[54/100] seed=5027 success=[True, True] steps=188 failed_at=[]
+[56/100] seed=5028 success=[True, True] steps=195 failed_at=[]
+[58/100] seed=5029 success=[True, True] steps=191 failed_at=[]
+[60/100] seed=5030 success=[True, True] steps=199 failed_at=[]
+[62/100] seed=5031 success=[False, True] steps=85 failed_at=['place_source']
+[64/100] seed=5032 success=[True, True] steps=246 failed_at=[]
+[66/100] seed=5033 success=[True, True] steps=172 failed_at=[]
+[68/100] seed=5034 success=[False, True] steps=400 failed_at=[]
+[70/100] seed=5035 success=[True, True] steps=169 failed_at=[]
+[72/100] seed=5036 success=[True, True] steps=245 failed_at=[]
+[74/100] seed=5037 success=[True, False] steps=400 failed_at=[]
+[76/100] seed=5038 success=[True, True] steps=177 failed_at=[]
+[78/100] seed=5039 success=[True, True] steps=173 failed_at=[]
+[80/100] seed=5040 success=[True, False] steps=400 failed_at=[]
+[82/100] seed=5041 success=[True, True] steps=197 failed_at=[]
+[84/100] seed=5042 success=[True, True] steps=186 failed_at=[]
+[86/100] seed=5043 success=[True, True] steps=171 failed_at=[]
+[88/100] seed=5044 success=[True, True] steps=163 failed_at=[]
+[90/100] seed=5045 success=[True, True] steps=175 failed_at=[]
+[92/100] seed=5046 success=[True, True] steps=153 failed_at=[]
+[94/100] seed=5047 success=[True, True] steps=197 failed_at=[]
+[96/100] seed=5048 success=[True, True] steps=177 failed_at=[]
+[98/100] seed=5049 success=[True, True] steps=200 failed_at=[]
+[100/100] seed=5050 success=[True, True] steps=173 failed_at=[]
+
+{
+  "checkpoint": "/home/tz/workspace/airbot/sim-rerun/artifacts/train_smolvla/checkpoints/012000/pretrained_model",
+  "episodes": 100,
+  "success_rate": 0.94,
+  "成功数": 94,
+  "failed_stage_counts": {
+    "place_source": 2
+  }
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/eval_v1_on_yaw.json
+### exit=0

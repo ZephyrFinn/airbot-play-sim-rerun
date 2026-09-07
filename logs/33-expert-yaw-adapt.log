@@ -1,0 +1,21 @@
+### 2026-08-27T22:10:06+08:00 变体A：姿态跟随物块 yaw（relative rotation）
+[2/20] seed=5001 [False, False] steps=400
+[4/20] seed=5002 [False, False] steps=400
+[6/20] seed=5003 [False, False] steps=400
+[8/20] seed=5004 [False, False] steps=400
+[10/20] seed=5005 [False, False] steps=400
+[12/20] seed=5006 [False, False] steps=400
+[14/20] seed=5007 [False, False] steps=400
+[16/20] seed=5008 [False, False] steps=400
+[18/20] seed=5009 [False, False] steps=400
+[20/20] seed=5010 [False, False] steps=400
+
+{
+  "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+  "episodes": 20,
+  "成功数": 0,
+  "success_rate": 0.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/expert_yaw_adapt.json
+### exit=0

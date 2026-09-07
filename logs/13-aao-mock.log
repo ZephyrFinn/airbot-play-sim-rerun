@@ -1,0 +1,84 @@
+### 2026-08-27T17:09:17+08:00 aao mock 后端 smoke test（不需要 MuJoCo 资产）
+Available demos (60):
+  airbot_g2p_gs
+  airbot_play_gs
+  airbot_xf9600_gs
+  arrange_flowers
+  arrange_flowers_gs
+  arrange_flowers_gs_airbot_p7
+  basis
+  basis_airbot_play_g2p
+  basis_airbot_play_xf9600
+  basis_franka
+  basis_mocap_eef
+  basis_mocap_eef_umi_v3
+  basis_mocap_eef_xf9600
+  basis_p7_g2p
+  basis_p7_v3_umi_v3
+  basis_p7_xf9600
+  basis_p7_xf9600_composable
+  basis_xf9600
+  close_drawer
+  close_hinge_door
+  common_vars
+  compatible_vars
+  cup_on_coaster
+  cup_on_coaster_airbot_p7_umi
+  cup_on_coaster_gs
+  cup_on_coaster_gs_airbot_p7
+  gs_mixin
+  hang_toothbrush_cup
+  hang_toothbrush_cup_gs
+  mock
+  open_door
+  open_door_airbot_play_back_gs
+  open_door_airbot_play_back_mixin
+  open_door_airbot_play_g2p
+  open_door_airbot_play_gs
+  open_door_p7_ik
+  open_door_p7_v3_umi_v3
+  open_drawer
+  open_hinge_door
+--- run mock ---
+Could not override 'rounds'.
+To append to your config use +rounds=1
+Key 'rounds' is not in struct
+    full_key: rounds
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+                                                   'failure_reason': 'operator '
+                                                                     'is not '
+                                                                     'grasping '
+                                                                     'the '
+                                                                     'required '
+                                                                     'object',
+                                                   'failure_stage': 'postcondition',
+                                                   'is_operator_grasping': False,
+                                                   'operation': 'pick',
+                                                   'operator': 'arm_a',
+                                                   'required_constraint': 'grasped',
+                                                   'target_object': 'cup'})])
+
+============================================================
+SUMMARY
+============================================================
+Sim init time: 0.000s
+Success rate: 0/1
+
+Round 1
+{'status': 'FAIL',
+ 'success_rate': '0/1',
+ 'loop_frequency': '2690.4 Hz (4 steps in 0.001s)',
+ 'completed_stage_info': {'pick_cup': ['failed']},
+ 'completion_steps': [4],
+ 'completion_time': ['0.001s'],
+ 'completion_sim_time': [],
+ 'sim_time': 'N/A',
+ 'completed_stages': [0],
+ 'final_stage': ['pick_cup'],
+ 'final_success': [False],
+ 'failure_reasons': ['failure reason (env 0, stage pick_cup): operator is not '
+                     'grasping the required object']}
+============================================================
+Summary saved to /home/tz/workspace/airbot/sim-rerun/ws/auto-atomic-operation/outputs/2026-08-27/17-09-26/summary.json

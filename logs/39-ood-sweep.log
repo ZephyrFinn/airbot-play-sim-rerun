@@ -1,0 +1,69 @@
+######## 2026-09-02T12:19:54+08:00  范围 ±0.03 m  ########
+--- 专家（上界）---
+  "episodes": 100,
+  "成功数": 100,
+  "success_rate": 1.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_expert_r03.json
+--- v1 模型 ---
+  "episodes": 100,
+  "success_rate": 0.95,
+  "成功数": 95,
+  "failed_stage_counts": {
+    "place_source": 1
+  }
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_v1_r03.json
+######## 2026-09-02T12:37:21+08:00  范围 ±0.05 m  ########
+--- 专家（上界）---
+  "episodes": 100,
+  "成功数": 100,
+  "success_rate": 1.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_expert_r05.json
+--- v1 模型 ---
+  "episodes": 100,
+  "success_rate": 0.72,
+  "成功数": 72,
+  "failed_stage_counts": {
+    "place_source": 2
+  }
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_v1_r05.json
+######## 2026-09-02T13:00:24+08:00  范围 ±0.07 m  ########
+--- 专家（上界）---
+  "episodes": 100,
+  "成功数": 100,
+  "success_rate": 1.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_expert_r07.json
+--- v1 模型 ---
+  "episodes": 100,
+  "success_rate": 0.46,
+  "成功数": 46,
+  "failed_stage_counts": {
+    "place_source": 7
+  }
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_v1_r07.json
+######## 2026-09-02T13:24:34+08:00  范围 ±0.09 m  ########
+--- 专家（上界）---
+  "episodes": 100,
+  "成功数": 100,
+  "success_rate": 1.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_expert_r09.json
+--- v1 模型 ---
+  "episodes": 100,
+  "success_rate": 0.31,
+  "成功数": 31,
+  "failed_stage_counts": {
+    "place_source": 12
+  }
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/ood_v1_r09.json
+### OOD_SWEEP_DONE 2026-09-02T13:50:51+08:00

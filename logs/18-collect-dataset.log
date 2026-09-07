@@ -1,0 +1,2940 @@
+### 2026-08-27T18:00:28+08:00 正式采集 60 条示教轨迹
+[2026-08-27 18:00:33,182][lerobot.utils.import_utils][WARNING] - Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.7.1+cu126) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torchcodec/_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torch/_ops.py", line 1392, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.60: cannot open shared object file: No such file or directory
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torchcodec/_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torch/_ops.py", line 1392, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.59: cannot open shared object file: No such file or directory
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torchcodec/_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torch/_ops.py", line 1392, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: /home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torchcodec/libtorchcodec_core6.so: undefined symbol: torch_dtype_float4_e2m1fn_x2
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torchcodec/_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torch/_ops.py", line 1392, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torchcodec/_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/torch/_ops.py", line 1392, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.56: cannot open shared object file: No such file or directory
+[end of libtorchcodec loading traceback].
+'torchcodec' is installed but cannot be loaded (see the error above). Falling back to 'pyav' as a default decoder.
+[2026-08-27 18:00:33,183][lerobot.configs.video][INFO] - Using video codec: libsvtav1
+[2026-08-27 18:00:33,183][lerobot.configs.video][INFO] - Using video codec: hevc
+[2026-08-27 18:00:33,345][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:00:33,433][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:00:33,435][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:00:34,062][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:00:34,128][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:00:34,129][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:00:34,735][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1001
+Map:   0%|          | 0/254 [00:00<?, ? examples/s]Map: 100%|██████████| 254/254 [00:00<00:00, 2937.13 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+  [keep] seed=1001 env=0 共 254 帧  -> 累计 1/60
+Map:   0%|          | 0/254 [00:00<?, ? examples/s]Map: 100%|██████████| 254/254 [00:00<00:00, 2935.14 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3357b000] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x2f193f80] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1001 env=1 共 254 帧  -> 累计 2/60
+[2026-08-27 18:01:01,098][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:01:01,225][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:01:01,229][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:01:01,798][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:01:01,873][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:01:01,876][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:01:02,473][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1002
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2934.04 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x371fa200] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x31160bc0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1002 env=0 共 249 帧  -> 累计 3/60
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2921.44 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x31160bc0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x371fb100] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1002 env=1 共 249 帧  -> 累计 4/60
+[2026-08-27 18:01:28,705][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:01:28,771][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:01:28,774][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:01:29,340][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:01:29,399][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:01:29,402][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:01:30,002][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1003
+Map:   0%|          | 0/250 [00:00<?, ? examples/s]Map: 100%|██████████| 250/250 [00:00<00:00, 2889.75 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x31054840] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x31c2b2c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1003 env=0 共 250 帧  -> 累计 5/60
+Map:   0%|          | 0/250 [00:00<?, ? examples/s]Map: 100%|██████████| 250/250 [00:00<00:00, 2869.89 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x31c2b2c0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x33239980] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1003 env=1 共 250 帧  -> 累计 6/60
+[2026-08-27 18:01:56,794][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:01:56,864][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:01:56,866][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:01:57,409][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:01:57,468][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:01:57,471][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:01:58,048][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1004
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2957.57 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3d162940] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3d162940] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1004 env=0 共 251 帧  -> 累计 7/60
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2878.42 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3d162940] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3a1380c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1004 env=1 共 251 帧  -> 累计 8/60
+[2026-08-27 18:02:24,444][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:02:24,509][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:02:24,511][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:02:25,070][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:02:25,148][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:02:25,150][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:02:25,729][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1005
+Map:   0%|          | 0/246 [00:00<?, ? examples/s]Map: 100%|██████████| 246/246 [00:00<00:00, 2979.77 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x371fb100] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3bdf1e00] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1005 env=0 共 246 帧  -> 累计 9/60
+Map:   0%|          | 0/246 [00:00<?, ? examples/s]Map: 100%|██████████| 246/246 [00:00<00:00, 2936.96 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bafa8828b00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7bafa8828b00] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1005 env=1 共 246 帧  -> 累计 10/60
+[2026-08-27 18:02:51,502][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:02:51,560][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:02:51,562][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:02:52,113][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:02:52,170][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:02:52,173][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:02:52,747][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1006
+Map:   0%|          | 0/240 [00:00<?, ? examples/s]Map: 100%|██████████| 240/240 [00:00<00:00, 2926.35 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x335a8f40] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7baf82ffd480] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1006 env=0 共 240 帧  -> 累计 11/60
+Map:   0%|          | 0/240 [00:00<?, ? examples/s]Map: 100%|██████████| 240/240 [00:00<00:00, 2832.39 examples/s]
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[info]: Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3bf461c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1006 env=1 共 240 帧  -> 累计 12/60
+[2026-08-27 18:03:18,158][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:03:18,230][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:03:18,232][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:03:18,784][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:03:18,841][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:03:18,843][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:03:19,440][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1007
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2965.59 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x31054840] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1007 env=0 共 247 帧  -> 累计 13/60
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2883.28 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x371fb100] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x335a8f40] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1007 env=1 共 247 帧  -> 累计 14/60
+[2026-08-27 18:03:45,682][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:03:45,732][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:03:45,734][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:03:46,288][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:03:46,337][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:03:46,340][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:03:46,918][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1008
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2952.35 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x378c8e40] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1008 env=0 共 253 帧  -> 累计 15/60
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2889.52 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3bf461c0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3bf461c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1008 env=1 共 253 帧  -> 累计 16/60
+[2026-08-27 18:04:13,412][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:04:13,490][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:04:13,493][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:04:14,043][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:04:14,104][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:04:14,106][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:04:14,701][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1009
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2953.30 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb0b79eef40] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1009 env=0 共 249 帧  -> 累计 17/60
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2920.25 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7bb0b79eef40] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1009 env=1 共 249 帧  -> 累计 18/60
+[2026-08-27 18:04:40,658][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:04:40,713][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:04:40,715][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:04:41,270][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:04:41,324][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:04:41,327][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:04:41,912][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1010
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2916.89 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3bf461c0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3bf461c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1010 env=0 共 253 帧  -> 累计 19/60
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2928.12 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb0b79eef40] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1010 env=1 共 253 帧  -> 累计 20/60
+[2026-08-27 18:05:08,735][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:05:08,806][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:05:08,809][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:05:09,386][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:05:09,444][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:05:09,446][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:05:10,033][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1011
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2902.89 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x31054840] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1011 env=0 共 249 帧  -> 累计 21/60
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2846.63 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x38d19440] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3197f980] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1011 env=1 共 249 帧  -> 累计 22/60
+[2026-08-27 18:05:36,629][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:05:36,686][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:05:36,690][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:05:37,238][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:05:37,284][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:05:37,286][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:05:37,861][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1012
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2775.49 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb09dbcfcc0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x38d19440] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1012 env=0 共 247 帧  -> 累计 23/60
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2942.38 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x353c3900] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7baf82aef540] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1012 env=1 共 247 帧  -> 累计 24/60
+[2026-08-27 18:06:04,274][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:06:04,350][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:06:04,353][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:06:04,907][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:06:04,962][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:06:04,964][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:06:05,545][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1013
+Map:   0%|          | 0/252 [00:00<?, ? examples/s]Map: 100%|██████████| 252/252 [00:00<00:00, 2932.76 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x38d19440] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x38d19440] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1013 env=0 共 252 帧  -> 累计 25/60
+Map:   0%|          | 0/252 [00:00<?, ? examples/s]Map: 100%|██████████| 252/252 [00:00<00:00, 2932.29 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x31054840] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x31054840] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1013 env=1 共 252 帧  -> 累计 26/60
+[2026-08-27 18:06:32,483][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:06:32,557][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:06:32,561][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:06:33,123][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:06:33,179][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:06:33,181][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:06:33,769][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1014
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2916.75 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Svt[info]: Level of Parallelism: 6
+[asm level on system : up to avx2]
+Svt[info]: Svt[info]: Number of PPCS 161
+[asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x32d06a00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x32716600] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1014 env=0 共 251 帧  -> 累计 27/60
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2854.95 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x32427c80] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x353c3900] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1014 env=1 共 251 帧  -> 累计 28/60
+[2026-08-27 18:07:00,594][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:07:00,675][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:07:00,679][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:07:01,237][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:07:01,297][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:07:01,299][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:07:01,891][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1015
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2978.55 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[warn]: Svt[info]: Preset M12 is mapped to M10.
+SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x32716600] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3ce63780] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1015 env=0 共 251 帧  -> 累计 29/60
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2838.37 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3ce63780] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3ce63780] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1015 env=1 共 251 帧  -> 累计 30/60
+[2026-08-27 18:07:28,394][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:07:28,451][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:07:28,454][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:07:29,023][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:07:29,082][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:07:29,085][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:07:29,670][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1016
+Map:   0%|          | 0/246 [00:00<?, ? examples/s]Map: 100%|██████████| 246/246 [00:00<00:00, 2863.20 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x39867bc0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x39867bc0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1016 env=0 共 246 帧  -> 累计 31/60
+Map:   0%|          | 0/246 [00:00<?, ? examples/s]Map: 100%|██████████| 246/246 [00:00<00:00, 2841.26 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x331e3940] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x31054840] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1016 env=1 共 246 帧  -> 累计 32/60
+[2026-08-27 18:07:56,018][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:07:56,067][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:07:56,069][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:07:56,639][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:07:56,692][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:07:56,695][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:07:57,285][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1017
+Map:   0%|          | 0/252 [00:00<?, ? examples/s]Map: 100%|██████████| 252/252 [00:00<00:00, 2971.30 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb0e2bedf80] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x397904c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1017 env=0 共 252 帧  -> 累计 33/60
+Map:   0%|          | 0/252 [00:00<?, ? examples/s]Map: 100%|██████████| 252/252 [00:00<00:00, 2863.77 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x39867bc0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x39867bc0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1017 env=1 共 252 帧  -> 累计 34/60
+[2026-08-27 18:08:24,249][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:08:24,317][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:08:24,318][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:08:24,875][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:08:24,944][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:08:24,946][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:08:25,520][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1018
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2982.45 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x37e95e00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x37e95e00] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1018 env=0 共 249 帧  -> 累计 35/60
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2911.93 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x37e95e00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x331e3940] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1018 env=1 共 249 帧  -> 累计 36/60
+[2026-08-27 18:08:52,288][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:08:52,340][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:08:52,342][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:08:52,906][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:08:52,958][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:08:52,961][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:08:53,541][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1019
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2925.87 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x4a1d8d00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3bf461c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1019 env=0 共 251 帧  -> 累计 37/60
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2929.26 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb07290eb80] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7bb04773e9c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1019 env=1 共 251 帧  -> 累计 38/60
+[2026-08-27 18:09:20,423][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:09:20,493][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:09:20,494][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:09:21,052][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:09:21,114][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:09:21,117][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:09:21,706][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1020
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2922.43 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x4a1d8d00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x397915c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1020 env=0 共 249 帧  -> 累计 39/60
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2815.37 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb0e2bedf80] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3c82ef40] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1020 env=1 共 249 帧  -> 累计 40/60
+[2026-08-27 18:09:49,028][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:09:49,086][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:09:49,089][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:09:49,643][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:09:49,699][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:09:49,702][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:09:50,282][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1021
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2907.86 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb07294ffc0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3ce50800] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1021 env=0 共 253 帧  -> 累计 41/60
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2904.21 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3ce50800] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7baf826b93c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1021 env=1 共 253 帧  -> 累计 42/60
+[2026-08-27 18:10:17,212][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:10:17,263][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:10:17,266][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:10:17,829][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:10:17,886][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:10:17,889][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:10:18,482][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1022
+Map:   0%|          | 0/248 [00:00<?, ? examples/s]Map: 100%|██████████| 248/248 [00:00<00:00, 2836.62 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7baff9d66bc0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x31c2a140] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1022 env=0 共 248 帧  -> 累计 43/60
+Map:   0%|          | 0/248 [00:00<?, ? examples/s]Map: 100%|██████████| 248/248 [00:00<00:00, 2827.29 examples/s]
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[info]: Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bafbd7f1e40] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3c816a80] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1022 env=1 共 248 帧  -> 累计 44/60
+[2026-08-27 18:10:45,693][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:10:45,748][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:10:45,751][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:10:46,309][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:10:46,355][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:10:46,358][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:10:46,945][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1023
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2856.12 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x39863480] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x2f199ec0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1023 env=0 共 247 帧  -> 累计 45/60
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2850.71 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x39863480] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x33372780] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1023 env=1 共 247 帧  -> 累计 46/60
+[2026-08-27 18:11:13,606][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:11:13,658][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:11:13,661][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:11:14,222][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:11:14,270][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:11:14,272][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:11:14,858][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1024
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2854.65 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x31c2a140] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x2f199ec0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1024 env=0 共 247 帧  -> 累计 47/60
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2867.47 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x384b7d40] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x2f199ec0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1024 env=1 共 247 帧  -> 累计 48/60
+[2026-08-27 18:11:41,636][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:11:41,733][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:11:41,737][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:11:42,310][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:11:42,375][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:11:42,378][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:11:42,970][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1025
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2826.54 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x3c97e800] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7baf826b93c0] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1025 env=0 共 249 帧  -> 累计 49/60
+Map:   0%|          | 0/249 [00:00<?, ? examples/s]Map: 100%|██████████| 249/249 [00:00<00:00, 2664.61 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb116740c00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3e3c9440] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1025 env=1 共 249 帧  -> 累计 50/60
+[2026-08-27 18:12:10,106][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:12:10,169][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:12:10,172][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:12:10,756][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:12:10,813][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:12:10,817][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:12:11,413][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1026
+Map:   0%|          | 0/246 [00:00<?, ? examples/s]Map: 100%|██████████| 246/246 [00:00<00:00, 2689.96 examples/s]
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[info]: Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7baf8b5dd080] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7bb0b793b400] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1026 env=0 共 246 帧  -> 累计 51/60
+Map:   0%|          | 0/246 [00:00<?, ? examples/s]Map: 100%|██████████| 246/246 [00:00<00:00, 2785.46 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x2561be00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x7bb0b7951200] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1026 env=1 共 246 帧  -> 累计 52/60
+[2026-08-27 18:12:38,849][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:12:38,924][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:12:38,928][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:12:39,506][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:12:39,580][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:12:39,583][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:12:40,182][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1027
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2808.75 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x455b6c80] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x37f27900] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1027 env=0 共 251 帧  -> 累计 53/60
+Map:   0%|          | 0/251 [00:00<?, ? examples/s]Map: 100%|██████████| 251/251 [00:00<00:00, 2798.45 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x455b6c80] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x455b3940] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1027 env=1 共 251 帧  -> 累计 54/60
+[2026-08-27 18:13:08,136][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:13:08,205][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:13:08,209][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:13:08,784][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:13:08,831][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:13:08,834][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:13:09,433][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1028
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2796.98 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x2561be00] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x353ab200] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1028 env=0 共 247 帧  -> 累计 55/60
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2761.74 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Svt[info]: Level of Parallelism: 6
+Number of PPCS 161
+Svt[info]: Number of PPCS 161
+Svt[info]: Svt[info]: [asm level on system : up to avx2]
+[asm level on system : up to avx2]
+Svt[info]: Svt[info]: [asm level selected : up to avx2]
+[asm level selected : up to avx2]
+Svt[info]: Svt[info]: -------------------------------------------
+-------------------------------------------
+Svt[info]: Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+[mp4 @ 0x353ab200] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x353ab200] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1028 env=1 共 247 帧  -> 累计 56/60
+[2026-08-27 18:13:36,916][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:13:36,985][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:13:36,988][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:13:37,562][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:13:37,630][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:13:37,634][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:13:38,256][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1029
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2828.12 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Svt[warn]: Level of Parallelism: 6
+Preset M12 is mapped to M10.
+Svt[info]: Number of PPCS 161
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: [asm level on system : up to avx2]
+Svt[info]: Svt[info]: -------------------------------------------
+[asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x455b3940] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x353ab200] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1029 env=0 共 247 帧  -> 累计 57/60
+Map:   0%|          | 0/247 [00:00<?, ? examples/s]Map: 100%|██████████| 247/247 [00:00<00:00, 2748.92 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x37f27900] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x455b3940] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1029 env=1 共 247 帧  -> 累计 58/60
+[2026-08-27 18:14:05,564][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:14:05,617][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:14:05,620][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:14:06,191][UnifiedMujocoEnv][INFO] - Initializing...
+[2026-08-27 18:14:06,250][UnifiedMujocoEnv][INFO] - Using timestep of 0.001667 seconds
+[2026-08-27 18:14:06,252][UnifiedMujocoEnv][INFO] - Setting up cameras: ['wrist_cam', 'env1_cam', 'env0_cam']
+[2026-08-27 18:14:06,850][MujocoTaskBackend][INFO] - MujocoTaskBackend random_seed=1030
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2893.49 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x315c4ac0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x3a98aa80] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1030 env=0 共 253 帧  -> 累计 59/60
+Map:   0%|          | 0/253 [00:00<?, ? examples/s]Map: 100%|██████████| 253/253 [00:00<00:00, 2837.10 examples/s]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0
+Svt[info]: SVT [build]  :	GCC 14.2.1 20250110 (Red Hat 14.2.1-7)	 64 bit
+Svt[info]: LIB Build date: Jul  3 2025 03:14:07
+Svt[info]: -------------------------------------------
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[warn]: Preset M12 is mapped to M10.
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 161
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 256 / 256 / 30 / 1
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 10 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 2 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / rate factor 					: CRF / 30 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+[mp4 @ 0x7bb28733c3c0] Starting second pass: moving the moov atom to the beginning of the file
+[mp4 @ 0x455b3940] Starting second pass: moving the moov atom to the beginning of the file
+  [keep] seed=1030 env=1 共 253 帧  -> 累计 60/60
+{
+  "episodes": 60,
+  "fps": 30,
+  "img_hw": [
+    256,
+    256
+  ],
+  "state_dim": 8,
+  "action_dim": 8,
+  "cameras": [
+    "wrist",
+    "env0"
+  ],
+  "task": "pick up the block and place it on the pedestal",
+  "root": "/home/tz/workspace/airbot/sim-rerun/artifacts/ds_pick_place"
+}
+### exit=0 2026-08-27T18:14:35+08:00

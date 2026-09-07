@@ -1,0 +1,911 @@
+{
+  "summary": {
+    "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+    "episodes": 200,
+    "成功数": 200,
+    "success_rate": 1.0,
+    "failed_stage_counts": {}
+  },
+  "per_episode": [
+    {
+      "seed": 5001,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5002,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5003,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5004,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5005,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5006,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5007,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5008,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 254,
+      "failed_stages": []
+    },
+    {
+      "seed": 5009,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5010,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5011,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5012,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5013,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5014,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5015,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5016,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5017,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5018,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5019,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5020,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5021,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5022,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5023,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5024,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5025,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5026,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5027,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5028,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5029,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5030,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5031,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 244,
+      "failed_stages": []
+    },
+    {
+      "seed": 5032,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5033,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5034,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5035,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5036,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5037,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5038,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5039,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5040,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5041,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5042,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5043,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5044,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 242,
+      "failed_stages": []
+    },
+    {
+      "seed": 5045,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5046,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 244,
+      "failed_stages": []
+    },
+    {
+      "seed": 5047,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5048,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5049,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5050,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5051,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5052,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5053,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5054,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5055,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5056,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5057,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5058,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5059,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5060,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 256,
+      "failed_stages": []
+    },
+    {
+      "seed": 5061,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5062,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5063,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5064,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5065,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5066,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5067,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5068,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5069,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5070,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5071,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5072,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5073,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5074,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5075,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5076,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5077,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5078,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5079,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5080,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 254,
+      "failed_stages": []
+    },
+    {
+      "seed": 5081,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5082,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    },
+    {
+      "seed": 5083,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5084,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 248,
+      "failed_stages": []
+    },
+    {
+      "seed": 5085,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5086,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 251,
+      "failed_stages": []
+    },
+    {
+      "seed": 5087,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5088,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5089,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5090,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5091,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5092,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5093,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 255,
+      "failed_stages": []
+    },
+    {
+      "seed": 5094,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 253,
+      "failed_stages": []
+    },
+    {
+      "seed": 5095,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 252,
+      "failed_stages": []
+    },
+    {
+      "seed": 5096,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5097,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5098,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5099,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 249,
+      "failed_stages": []
+    },
+    {
+      "seed": 5100,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 250,
+      "failed_stages": []
+    }
+  ]
+}

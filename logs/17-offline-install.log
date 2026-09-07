@@ -1,0 +1,69 @@
+### 2026-08-27T17:56:40+08:00 离线安装 66 个本地 wheel（--no-index --find-links）
+Using Python 3.12.3 environment at: ws/venv-vla
+  × No solution found when resolving dependencies:
+  ╰─▶ Because docopt was not found in the provided package locations and
+      you require docopt==0.6.2, we can conclude that your requirements are
+      unsatisfiable.
+uv rc=1
+Using Python 3.12.3 environment at: ws/venv-vla
+Resolved 1 package in 205ms
+Installed 1 package in 14ms
+ + docopt==0.6.2
+/tmp/offline-install.sh: 行 9: python: 未找到命令
+### exit=127
+### 2026-08-27T17:56:48+08:00 离线安装（排除只有 sdist 的 docopt）
+ + psutil==7.2.2
+ + pygments==2.21.0
+ + regex==2026.7.19
+ + requests==2.34.2
+ + rich==15.0.0
+ + safetensors==0.8.0
+ + setuptools==81.0.0
+ + shellingham==1.5.4
+ + sympy==1.14.0
+ + termcolor==3.3.0
+ + tokenizers==0.22.2
+ + toml==0.10.2
+ + torch==2.7.1
+ + torchvision==0.22.1
+ + tqdm==4.70.0
+ + transformers==5.5.4
+ + triton==3.3.1
+ + typer==0.27.1
+ + typing-inspect==0.9.0
+ + urllib3==2.7.0
+rc=0
+### 2026-08-27T17:57:02+08:00 环境验证
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/lerobot/datasets/__init__.py", line 20, in <module>
+    require_package("datasets", extra="dataset")
+  File "/home/tz/workspace/airbot/sim-rerun/ws/venv-vla/lib/python3.12/site-packages/lerobot/utils/import_utils.py", line 101, in require_package
+    raise ImportError(
+ImportError: 'datasets' is required but not installed. Install it with: pip install 'lerobot[dataset]' (or uv pip install 'lerobot[dataset]')
+torch 2.7.1+cu126 | cuda 12.6 | available True
+GPU: NVIDIA RTX 5880 Ada Generation
+lerobot 0.6.1
+SmolVLAPolicy OK
+ - fsspec==2026.7.0
+ + fsspec==2026.2.0
+ + jsonlines==4.0.0
+ + multidict==6.7.1
+ + multiprocess==0.70.19
+ + pandas==2.3.3
+ + propcache==0.5.2
+ + pyarrow==25.0.1
+ + python-dateutil==2.9.0.post0
+ + pytz==2026.3.post1
+ + six==1.17.0
+ + torchcodec==0.11.1
+ + tzdata==2026.3
+ + xxhash==4.0.1
+ + yarl==1.24.5
+### 2026-08-27T17:58:16+08:00 最终环境验证
+torch 2.7.1+cu126 | cuda 12.6 | available True
+GPU: NVIDIA RTX 5880 Ada Generation
+lerobot 0.6.1
+SmolVLAPolicy OK
+LeRobotDataset OK
+auto_atom OK | mujoco 3.12.0 | cv2 4.13.0

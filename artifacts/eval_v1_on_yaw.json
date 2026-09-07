@@ -1,0 +1,467 @@
+{
+  "summary": {
+    "checkpoint": "/home/tz/workspace/airbot/sim-rerun/artifacts/train_smolvla/checkpoints/012000/pretrained_model",
+    "episodes": 100,
+    "success_rate": 0.94,
+    "成功数": 94,
+    "failed_stage_counts": {
+      "place_source": 2
+    }
+  },
+  "per_episode": [
+    {
+      "seed": 5001,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 194,
+      "failed_stages": []
+    },
+    {
+      "seed": 5002,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 174,
+      "failed_stages": []
+    },
+    {
+      "seed": 5003,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 177,
+      "failed_stages": []
+    },
+    {
+      "seed": 5004,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 160,
+      "failed_stages": []
+    },
+    {
+      "seed": 5005,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 142,
+      "failed_stages": []
+    },
+    {
+      "seed": 5006,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 247,
+      "failed_stages": []
+    },
+    {
+      "seed": 5007,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 190,
+      "failed_stages": []
+    },
+    {
+      "seed": 5008,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 191,
+      "failed_stages": []
+    },
+    {
+      "seed": 5009,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 153,
+      "failed_stages": []
+    },
+    {
+      "seed": 5010,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 165,
+      "failed_stages": []
+    },
+    {
+      "seed": 5011,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 390,
+      "failed_stages": []
+    },
+    {
+      "seed": 5012,
+      "success": [
+        true,
+        false
+      ],
+      "steps": 91,
+      "failed_stages": [
+        "place_source"
+      ]
+    },
+    {
+      "seed": 5013,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 137,
+      "failed_stages": []
+    },
+    {
+      "seed": 5014,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 400,
+      "failed_stages": []
+    },
+    {
+      "seed": 5015,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 190,
+      "failed_stages": []
+    },
+    {
+      "seed": 5016,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 169,
+      "failed_stages": []
+    },
+    {
+      "seed": 5017,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 197,
+      "failed_stages": []
+    },
+    {
+      "seed": 5018,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 140,
+      "failed_stages": []
+    },
+    {
+      "seed": 5019,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 171,
+      "failed_stages": []
+    },
+    {
+      "seed": 5020,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 185,
+      "failed_stages": []
+    },
+    {
+      "seed": 5021,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 196,
+      "failed_stages": []
+    },
+    {
+      "seed": 5022,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 171,
+      "failed_stages": []
+    },
+    {
+      "seed": 5023,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 174,
+      "failed_stages": []
+    },
+    {
+      "seed": 5024,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 298,
+      "failed_stages": []
+    },
+    {
+      "seed": 5025,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 193,
+      "failed_stages": []
+    },
+    {
+      "seed": 5026,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 298,
+      "failed_stages": []
+    },
+    {
+      "seed": 5027,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 188,
+      "failed_stages": []
+    },
+    {
+      "seed": 5028,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 195,
+      "failed_stages": []
+    },
+    {
+      "seed": 5029,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 191,
+      "failed_stages": []
+    },
+    {
+      "seed": 5030,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 199,
+      "failed_stages": []
+    },
+    {
+      "seed": 5031,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 85,
+      "failed_stages": [
+        "place_source"
+      ]
+    },
+    {
+      "seed": 5032,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": []
+    },
+    {
+      "seed": 5033,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 172,
+      "failed_stages": []
+    },
+    {
+      "seed": 5034,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 400,
+      "failed_stages": []
+    },
+    {
+      "seed": 5035,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 169,
+      "failed_stages": []
+    },
+    {
+      "seed": 5036,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 245,
+      "failed_stages": []
+    },
+    {
+      "seed": 5037,
+      "success": [
+        true,
+        false
+      ],
+      "steps": 400,
+      "failed_stages": []
+    },
+    {
+      "seed": 5038,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 177,
+      "failed_stages": []
+    },
+    {
+      "seed": 5039,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 173,
+      "failed_stages": []
+    },
+    {
+      "seed": 5040,
+      "success": [
+        true,
+        false
+      ],
+      "steps": 400,
+      "failed_stages": []
+    },
+    {
+      "seed": 5041,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 197,
+      "failed_stages": []
+    },
+    {
+      "seed": 5042,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 186,
+      "failed_stages": []
+    },
+    {
+      "seed": 5043,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 171,
+      "failed_stages": []
+    },
+    {
+      "seed": 5044,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 163,
+      "failed_stages": []
+    },
+    {
+      "seed": 5045,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 175,
+      "failed_stages": []
+    },
+    {
+      "seed": 5046,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 153,
+      "failed_stages": []
+    },
+    {
+      "seed": 5047,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 197,
+      "failed_stages": []
+    },
+    {
+      "seed": 5048,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 177,
+      "failed_stages": []
+    },
+    {
+      "seed": 5049,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 200,
+      "failed_stages": []
+    },
+    {
+      "seed": 5050,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 173,
+      "failed_stages": []
+    }
+  ]
+}

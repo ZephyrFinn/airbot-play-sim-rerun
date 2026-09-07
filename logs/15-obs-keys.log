@@ -1,0 +1,25 @@
+
+==========================================================================================
+观测字典共 21 个 key
+==========================================================================================
+  action/arm/pose/orientation                                    (2, 4) float32  ← 动作
+  action/arm/pose/position                                       (2, 3) float32  ← 动作
+  action/gripper/joint_state/position                            (2, 1) float64  ← 动作
+  arm/pose/orientation                                           (2, 4) float32  ← 状态
+  arm/pose/position                                              (2, 3) float32  ← 状态
+  arm/pose/rotation                                              (2, 3) float64  ← 状态
+  arm/pose/rotation_6d                                           (2, 6) float64  ← 状态
+  env0_cam/aligned_depth_to_color/image_raw                      (2, 352, 640) float32
+  env0_cam/color/image_raw                                       (2, 352, 640, 3) uint8  ← 图像
+  env0_cam/mask/heat_map                                         (2, 352, 640, 5) uint8
+  env1_cam/aligned_depth_to_color/image_raw                      (2, 352, 640) float32
+  env1_cam/color/image_raw                                       (2, 352, 640, 3) uint8  ← 图像
+  env1_cam/mask/heat_map                                         (2, 352, 640, 5) uint8
+  gripper/joint_state/effort                                     (2, 1) float64  ← 状态
+  gripper/joint_state/position                                   (2, 1) float64  ← 状态
+  gripper/joint_state/velocity                                   (2, 1) float64  ← 状态
+  gripper_left_/tactile/point_cloud2                             (2,) object
+  gripper_right_/tactile/point_cloud2                            (2,) object
+  wrist_cam/aligned_depth_to_color/image_raw                     (2, 352, 640) float32
+  wrist_cam/color/image_raw                                      (2, 352, 640, 3) uint8  ← 图像
+  wrist_cam/mask/heat_map                                        (2, 352, 640, 5) uint8

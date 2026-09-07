@@ -1,0 +1,235 @@
+### 2026-08-27T17:01:39+08:00 rosdep + colcon build begin
++(eval):7> source /opt/ros/jazzy/setup.bash
++/opt/ros/jazzy/setup.bash:3> AMENT_SHELL=bash 
++/opt/ros/jazzy/setup.bash:6> AMENT_CURRENT_PREFIX=+/opt/ros/jazzy/setup.bash:6> dirname ''
++/opt/ros/jazzy/setup.bash:6> AMENT_CURRENT_PREFIX=+/opt/ros/jazzy/setup.bash:6> cd .
++/opt/ros/jazzy/setup.bash:6> pwd
++/opt/ros/jazzy/setup.bash:6> AMENT_CURRENT_PREFIX=/home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2 
++/opt/ros/jazzy/setup.bash:8> [ -n '' ']'
++/opt/ros/jazzy/setup.bash:11> . /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/setup.sh
+/opt/ros/jazzy/setup.bash:.:11: 没有那个文件或目录: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/setup.sh
++(eval):8> sudo -E rosdep init
++(eval):8> tail -2
+	/etc/ros/rosdep/sources.list.d/20-default.list
+Please delete if you wish to re-initialize
++(eval):9> rosdep update
++(eval):9> tail -3
+Skip end-of-life distro "noetic"
+Add distro "rolling"
+updated cache in /home/tz/.ros/rosdep/sources.cache
++(eval):10> rosdep install --from-paths src --ignore-src --rosdistro jazzy -r -y
++(eval):10> tail -20
+/usr/bin/rosdep:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import load_entry_point
+ERROR: the following packages/stacks could not have their rosdep keys resolved
+to system dependencies:
+airbot_play_movit_config: Cannot locate rosdep definition for [warehouse_ros_mongo]
+Continuing to install resolvable dependencies...
+#All required rosdeps installed successfully
++(eval):11> colcon build --symlink-install --event-handlers console_direct+
+Starting >>> airbot_play_description
+Starting >>> airbot_play
+Starting >>> airbot_play_msgs
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting C compiler ABI info
+-- Detecting CXX compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play_description
+-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/launch/view_robot.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/urdf/airbot_play_description.urdf
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/base_link.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/eef_connect_base_link.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/g2_base_link.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/g2_left_link.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/g2_right_link.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/link1.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/link2.STL
+-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/link3.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/link4.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/link5.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/meshes/link6.STL
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/config/view_robot.rviz
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/ament_index/resource_index/package_run_dependencies/airbot_play_description
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/ament_index/resource_index/parent_prefix_path/airbot_play_description
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/environment/ament_prefix_path.sh
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+
+-- Build files have been written to: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play_msgs
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/environment/path.sh
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/environment/path.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/local_setup.bash
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/local_setup.sh
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/local_setup.zsh
+-- Install configuration: ""
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/ament_index/resource_index/package_run_dependencies/airbot_play_msgs
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/ament_index/resource_index/parent_prefix_path/airbot_play_msgs
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/environment/ament_prefix_path.sh
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/environment/ament_prefix_path.dsv
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/environment/path.sh
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/environment/path.dsv
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/local_setup.bash
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/local_setup.sh
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/local_setup.zsh
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/local_setup.dsv
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/package.dsv
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/ament_index/resource_index/packages/airbot_play_msgs
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/cmake/airbot_play_msgsConfig.cmake
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/cmake/airbot_play_msgsConfig-version.cmake
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/local_setup.dsv
+-- Installing: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_msgs/share/airbot_play_msgs/package.xml
+--- stderr: airbot_play_msgs
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+
+---
+Finished <<< airbot_play_msgs [1.18s]
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/package.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/ament_index/resource_index/packages/airbot_play_description
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/cmake/airbot_play_descriptionConfig.cmake
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/cmake/airbot_play_descriptionConfig-version.cmake
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_description/share/airbot_play_description/package.xml
+Finished <<< airbot_play_description [1.24s]
+Starting >>> airbot_play_movit_config
+running develop
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+running egg_info
+creating airbot_play.egg-info
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+writing airbot_play.egg-info/PKG-INFO
+writing dependency_links to airbot_play.egg-info/dependency_links.txt
+writing entry points to airbot_play.egg-info/entry_points.txt
+writing requirements to airbot_play.egg-info/requires.txt
+writing top-level names to airbot_play.egg-info/top_level.txt
+writing manifest file 'airbot_play.egg-info/SOURCES.txt'
+reading manifest file 'airbot_play.egg-info/SOURCES.txt'
+writing manifest file 'airbot_play.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/lib/python3.12/site-packages/airbot-play.egg-link (link to .)
+Installing airbot_play_node script to /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/lib/airbot_play
+
+Installed /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play
+running symlink_data
+creating /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/ament_index
+creating /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/ament_index/resource_index
+creating /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/ament_index/resource_index/packages
+symbolically linking /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play/resource/airbot_play -> /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/ament_index/resource_index/packages
+symbolically linking /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play/package.xml -> /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/airbot_play
+creating /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/airbot_play/config
+symbolically linking /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play/config/airbot_params.yaml -> /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/airbot_play/config
+creating /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/airbot_play/launch
+symbolically linking /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play/launch/play.launch.py -> /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play/share/airbot_play/launch
+Finished <<< airbot_play [1.58s]
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/build/airbot_play_movit_config
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/ament_index/resource_index/package_run_dependencies/airbot_play_movit_config
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/ament_index/resource_index/parent_prefix_path/airbot_play_movit_config
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/environment/ament_prefix_path.sh
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/environment/ament_prefix_path.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/environment/path.sh
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/environment/path.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/local_setup.bash
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/local_setup.sh
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/local_setup.zsh
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/local_setup.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/package.dsv
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/ament_index/resource_index/packages/airbot_play_movit_config
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/cmake/airbot_play_movit_configConfig.cmake
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/cmake/airbot_play_movit_configConfig-version.cmake
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/package.xml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/bringup.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/demo.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/move_group.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/moveit_rviz.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/movit_to_airbot.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/rsp.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/setup_assistant.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/spawn_controllers.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/static_virtual_joint_tfs.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/launch/warehouse_db.launch.py
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/airbot_play_description.ros2_control.xacro
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/airbot_play_description.srdf
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/airbot_play_description.urdf.xacro
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/initial_positions.yaml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/joint_limits.yaml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/kinematics.yaml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/moveit.rviz
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/moveit_controllers.yaml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/pilz_cartesian_limits.yaml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/config/ros2_controllers.yaml
+-- Symlinking: /home/tz/workspace/airbot/sim-rerun/ws/AIRBOT-Play-Hardware-with-Moveit2/install/airbot_play_movit_config/share/airbot_play_movit_config/.setup_assistant
+Finished <<< airbot_play_movit_config [1.12s]
+
+Summary: 4 packages finished [2.51s]
+  1 package had stderr output: airbot_play_msgs
++(eval):12> echo '### exit=0'
+### exit=0

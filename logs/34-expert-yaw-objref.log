@@ -1,0 +1,21 @@
+### 2026-08-27T22:11:35+08:00 变体B：reference: object（继承物块朝向）
+[2/20] seed=5001 [True, True] steps=242
+[4/20] seed=5002 [True, True] steps=245
+[6/20] seed=5003 [True, True] steps=251
+[8/20] seed=5004 [True, True] steps=251
+[10/20] seed=5005 [True, True] steps=245
+[12/20] seed=5006 [True, True] steps=249
+[14/20] seed=5007 [True, True] steps=253
+[16/20] seed=5008 [True, True] steps=252
+[18/20] seed=5009 [True, True] steps=245
+[20/20] seed=5010 [True, True] steps=253
+
+{
+  "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+  "episodes": 20,
+  "成功数": 20,
+  "success_rate": 1.0,
+  "failed_stage_counts": {}
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/expert_yaw_objref.json
+### exit=0

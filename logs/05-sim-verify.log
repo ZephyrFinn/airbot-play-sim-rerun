@@ -1,0 +1,59 @@
+### 2026-08-27T17:03:52+08:00 仿真验收 SOP 2.2
+--- ros2 control list_controllers ---
+airbot_play_g2_controller joint_trajectory_controller/JointTrajectoryController  active
+joint_state_broadcaster   joint_state_broadcaster/JointStateBroadcaster          active
+--- ros2 control list_hardware_components ---
+Hardware Component 1
+	name: FakeSystem
+	type: system
+	plugin name: mock_components/GenericSystem
+	state: id=3 label=active
+	read/write rate: 100 Hz
+	is_async: False
+	command interfaces
+		joint6/position [available] [claimed]
+		joint3/position [available] [claimed]
+		joint2/position [available] [claimed]
+		joint5/position [available] [claimed]
+		joint4/position [available] [claimed]
+		joint1/position [available] [claimed]
+--- ros2 node list ---
+/airbot_play_g2_controller
+/controller_manager
+/fakesystem
+/interactive_marker_display_101620766884240
+/joint_state_broadcaster
+/move_group
+/move_group/moveit
+/move_group_private_103180720330256
+/moveit_2014473363
+/moveit_3931678356
+/moveit_simple_controller_manager
+/robot_state_publisher
+/rviz
+/rviz_private_126943531080912
+/transform_listener_impl_5c6c6d63bbd0
+/transform_listener_impl_5dd7a949ed70
+/transform_listener_impl_7374592e5140
+--- ros2 topic info /joint_states --verbose (只看 Publisher count) ---
+Type: sensor_msgs/msg/JointState
+
+Publisher count: 1
+
+Node name: joint_state_broadcaster
+Node namespace: /
+Traceback (most recent call last):
+  File "/opt/ros/jazzy/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.32.10', 'console_scripts', 'ros2')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2cli/cli.py", line 91, in main
+    rc = extension.main(parser=parser, args=args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2topic/command/topic.py", line 41, in main
+    return extension.main(args=args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/ros2topic/verb/info.py", line 68, in main
+    print('Subscription count: %d' %
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe

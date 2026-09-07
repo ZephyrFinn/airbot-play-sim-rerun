@@ -1,0 +1,49 @@
+### 真机分支的静态复核（无硬件，只看代码/产物）
+--- 1) 真机 launch 起了哪些节点 ---
+#!/usr/bin/env python3
+# coding: utf-8
+import os
+
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
+
+
+def generate_launch_description():
+    moveit_pkg = "airbot_play_movit_config"
+    moveit_share = get_package_share_directory(moveit_pkg)
+
+    bringup_launch = os.path.join(moveit_share, "launch", "bringup.launch.py")
+    bringup = IncludeLaunchDescription(PythonLaunchDescriptionSource(bringup_launch))
+
+    ld = LaunchDescription()
+    ld.add_action(bringup)
+
+    return ld
+
+--- 2) 真机节点的 shebang（SOP 4.9 那个坑的根因） ---
+#!/usr/bin/python3
+
+--- 3) 真机默认参数 ---
+airbot_play_g2_moveit_node:
+  ros__parameters:
+    can_interface: "can0"
+    use_g2: true
+    g2_joint_name: "g2_joint"
+    publish_rate: 50.0
+    pvt_timeout: 10.0
+    position_tolerance: 0.05
+    default_velocity: 1.0471975512
+    default_k: 150.0
+    planner_max_velocity: 12.5663706
+    allowed_start_tolerance: 0.01
+    allowed_start_timeout: 0.5
+    auto_go_zero: true
+    auto_go_zero_delay: 0.5
+    go_zero_threshold: 0.001
+    use_interpolation: true
+    interpolation_send_interval: 0.001
+    hold_torque_enable: true
+    hold_torque_interval: 0.02

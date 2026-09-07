@@ -1,0 +1,30 @@
+                                                                                0.26000000149011615],
+                                                                   'randomization': None,
+                                                                   'reference': 'world',
+                                                                   'relative': False,
+                                                                   'rotation': None,
+                                                                   'static': False,
+                                                                   'tolerance': None,
+                                                                   'use_slerp': False}})])
+
+============================================================
+SUMMARY
+============================================================
+Sim init time: 0.008s
+Success rate: 2/2
+
+Round 1
+{'status': 'OK',
+ 'success_rate': '2/2',
+ 'loop_frequency': '119.7 Hz (254 steps in 2.122s)',
+ 'completed_stage_info': {'pick_source': ['succeeded', 'succeeded'],
+                          'place_source': ['succeeded', 'succeeded']},
+ 'completion_steps': [248, 254],
+ 'completion_time': ['2.107s', '2.121s'],
+ 'completion_sim_time': ['8.267s', '8.467s'],
+ 'sim_time': 'min=8.267s, max=8.467s, mean=8.367s',
+ 'completed_stages': [2, 2],
+ 'final_stage': ['', ''],
+ 'final_success': [True, True]}
+============================================================
+Summary saved to /home/tz/workspace/airbot/sim-rerun/ws/auto-atomic-operation/outputs/2026-08-27/17-22-32/summary.json

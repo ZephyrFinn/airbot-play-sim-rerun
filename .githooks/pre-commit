@@ -1,0 +1,9 @@
+#!/bin/sh
+# 拦截私密材料被提交。命中就中止，不给"手滑"的机会。
+BAD=$(git diff --cached --name-only | grep -E '面试|简历|私密|原始资料对照|洞见清单|通俗解读|手把手走一遍|pi05-部署复盘')
+if [ -n "$BAD" ]; then
+  echo "✗ 提交被拦截：以下文件属于私密材料，不应进入公开仓库"
+  echo "$BAD" | sed 's/^/    /'
+  echo "  如确认要提交，用 git commit --no-verify（先想清楚）"
+  exit 1
+fi

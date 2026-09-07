@@ -1,0 +1,24 @@
+### 2026-08-27T22:08:12+08:00 打开 yaw 随机化后，先验证专家还能不能完成任务
+[2/20] seed=5001 [False, True] steps=241
+[4/20] seed=5002 [False, True] steps=246
+[6/20] seed=5003 [False, True] steps=244
+[8/20] seed=5004 [False, False] steps=191
+[10/20] seed=5005 [False, True] steps=240
+[12/20] seed=5006 [True, False] steps=255
+[14/20] seed=5007 [True, True] steps=257
+[16/20] seed=5008 [False, False] steps=237
+[18/20] seed=5009 [False, False] steps=279
+[20/20] seed=5010 [False, True] steps=244
+
+{
+  "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+  "episodes": 20,
+  "成功数": 8,
+  "success_rate": 0.4,
+  "failed_stage_counts": {
+    "pick_source": 8,
+    "place_source": 4
+  }
+}
+已写入 /home/tz/workspace/airbot/sim-rerun/artifacts/expert_yaw_baseline.json
+### exit=0

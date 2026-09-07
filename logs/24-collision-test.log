@@ -1,0 +1,21 @@
+{
+  "1_无障碍物": {
+    "error_code": 1,
+    "traj_points": 14,
+    "wall_s": 0.014
+  },
+  "2_加了障碍物盒子": {
+    "error_code": 99999,
+    "traj_points": 0,
+    "wall_s": 0.012
+  },
+  "3_移除障碍物后": {
+    "error_code": 1,
+    "traj_points": 14,
+    "wall_s": 0.022
+  },
+  "说明": {
+    "障碍物": "base_link 系下 0.4^3 m 盒子，中心 (0.30, 0, 0.30)",
+    "判读": "加障碍后 error_code 应变成负数（-12 GOAL_IN_COLLISION 或 -2/99999 规划失败）；移除后应恢复 1"
+  }
+}

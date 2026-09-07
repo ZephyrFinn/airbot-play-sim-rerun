@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "策略": "ConfigDrivenDemoPolicy（脚本化专家）",
+    "episodes": 20,
+    "成功数": 8,
+    "success_rate": 0.4,
+    "failed_stage_counts": {
+      "pick_source": 8,
+      "place_source": 4
+    }
+  },
+  "per_episode": [
+    {
+      "seed": 5001,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 241,
+      "failed_stages": [
+        "pick_source"
+      ]
+    },
+    {
+      "seed": 5002,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 246,
+      "failed_stages": [
+        "place_source"
+      ]
+    },
+    {
+      "seed": 5003,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 244,
+      "failed_stages": [
+        "pick_source"
+      ]
+    },
+    {
+      "seed": 5004,
+      "success": [
+        false,
+        false
+      ],
+      "steps": 191,
+      "failed_stages": [
+        "pick_source",
+        "pick_source"
+      ]
+    },
+    {
+      "seed": 5005,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 240,
+      "failed_stages": [
+        "pick_source"
+      ]
+    },
+    {
+      "seed": 5006,
+      "success": [
+        true,
+        false
+      ],
+      "steps": 255,
+      "failed_stages": [
+        "pick_source"
+      ]
+    },
+    {
+      "seed": 5007,
+      "success": [
+        true,
+        true
+      ],
+      "steps": 257,
+      "failed_stages": []
+    },
+    {
+      "seed": 5008,
+      "success": [
+        false,
+        false
+      ],
+      "steps": 237,
+      "failed_stages": [
+        "pick_source",
+        "place_source"
+      ]
+    },
+    {
+      "seed": 5009,
+      "success": [
+        false,
+        false
+      ],
+      "steps": 279,
+      "failed_stages": [
+        "place_source",
+        "place_source"
+      ]
+    },
+    {
+      "seed": 5010,
+      "success": [
+        false,
+        true
+      ],
+      "steps": 244,
+      "failed_stages": [
+        "pick_source"
+      ]
+    }
+  ]
+}

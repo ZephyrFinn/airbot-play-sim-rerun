@@ -1,0 +1,27 @@
+# ═══ 不上传：第三方代码与 Python 环境（9.4 G）═══
+# 这些都是别人的仓库或可重建的环境，见 README「仓库不包含什么」
+ws/
+
+# ═══ 不上传：训练产物与数据集（9.1 G）═══
+artifacts/train_smolvla/
+artifacts/train_smolvla_yaw/
+artifacts/ds_pick_place/
+artifacts/ds_pick_place_yaw/
+
+# ═══ 上传：artifacts/ 下的图表、视频、评测 json（1.6 M）═══
+# 无需额外规则——上面只忽略了子目录，顶层文件默认纳入
+
+# ═══ 运行产物 ═══
+**/outputs/
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# ═══ 不上传：整个私密目录（求职材料、凭据索引、清洗前备份）═══
+# 目录级隔离——新增文件自动排除，不用再逐个加规则
+私密-面试准备/
+面试准备-私密/
+*面试*
+*简历*
